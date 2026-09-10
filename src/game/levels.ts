@@ -171,7 +171,9 @@ export const worlds: World[] = [
     name: "Template",
     levels: [
       {
-        // Smallest possible shape: one color, no dead cells.
+        // A small example: one color, no dead cells. (3x3 is just a simple
+        // choice, not a minimum — the game logic doesn't enforce a floor on
+        // board size.)
         id: "template-l1",
         rows: 3,
         cols: 3,
