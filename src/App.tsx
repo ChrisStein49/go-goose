@@ -7,6 +7,7 @@ import { HowToPlay } from "./components/HowToPlay";
 import { LevelEditor } from "./components/LevelEditor";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
+import { LevelStatusBar } from "./components/LevelStatusBar";
 import { allLevels, levelDisplayName } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
@@ -91,10 +92,7 @@ function App() {
             <span className="level-name">{levelDisplayName(currentLevel.id)}</span>
           </div>
 
-          <div className="status-bar">
-            <span>Moves: {moveCount}</span>
-            {complete && <span className="complete-badge">Level complete!</span>}
-          </div>
+          <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} complete={complete} />
 
           <GameBoard
             key={currentLevel.id}

@@ -34,12 +34,22 @@
 
 .status-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px 12px;
   margin-bottom: 16px;
   font-size: 15px;
   min-height: 28px;
+}
+
+.best-known {
+  font-size: 13px;
+  color: #4a4560;
+}
+
+.complete-badge.new-record {
+  background: #c9971e;
 }
 
 .complete-badge {
