@@ -9,7 +9,6 @@ export type Board = Cell[][];
 
 export interface Level {
   id: string;
-  name: string;
   rows: number;
   cols: number;
   cells: Cell[][];

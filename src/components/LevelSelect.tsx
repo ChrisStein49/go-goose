@@ -32,7 +32,7 @@ export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
                     .join(" ")}
                   disabled={!unlocked}
                   onClick={() => onSelectLevel(level)}
-                  title={level.name}
+                  title={`Level ${i + 1}`}
                 >
                   {done ? "✓" : unlocked ? i + 1 : "🔒"}
                 </button>

@@ -19,7 +19,6 @@ export const worlds: World[] = [
     levels: [
       {
         id: "w1-l1",
-        name: "First Steps",
         rows: 4,
         cols: 4,
         cells: [
@@ -31,7 +30,6 @@ export const worlds: World[] = [
       },
       {
         id: "w1-l2",
-        name: "Spread Out",
         rows: 4,
         cols: 4,
         cells: [
@@ -43,7 +41,6 @@ export const worlds: World[] = [
       },
       {
         id: "w1-l3",
-        name: "Wide Field",
         rows: 4,
         cols: 5,
         cells: [
@@ -55,7 +52,6 @@ export const worlds: World[] = [
       },
       {
         id: "w1-l4",
-        name: "Big Flock",
         rows: 5,
         cols: 5,
         cells: [
@@ -74,7 +70,6 @@ export const worlds: World[] = [
     levels: [
       {
         id: "w2-l1",
-        name: "Three Flocks",
         rows: 4,
         cols: 5,
         cells: [
@@ -86,7 +81,6 @@ export const worlds: World[] = [
       },
       {
         id: "w2-l2",
-        name: "Mixed Meadow",
         rows: 4,
         cols: 5,
         cells: [
@@ -98,7 +92,6 @@ export const worlds: World[] = [
       },
       {
         id: "w2-l3",
-        name: "Long Pond",
         rows: 4,
         cols: 6,
         cells: [
@@ -110,7 +103,6 @@ export const worlds: World[] = [
       },
       {
         id: "w2-l4",
-        name: "Scattered Flocks",
         rows: 4,
         cols: 6,
         cells: [
@@ -128,7 +120,6 @@ export const worlds: World[] = [
     levels: [
       {
         id: "w3-l1",
-        name: "Blocked Paths",
         rows: 4,
         cols: 5,
         cells: [
@@ -140,7 +131,6 @@ export const worlds: World[] = [
       },
       {
         id: "w3-l2",
-        name: "Narrow Gaps",
         rows: 4,
         cols: 5,
         cells: [
@@ -152,7 +142,6 @@ export const worlds: World[] = [
       },
       {
         id: "w3-l3",
-        name: "Split Pond",
         rows: 4,
         cols: 5,
         cells: [
@@ -164,7 +153,6 @@ export const worlds: World[] = [
       },
       {
         id: "w3-l4",
-        name: "Deep Thicket",
         rows: 4,
         cols: 5,
         cells: [
@@ -179,3 +167,12 @@ export const worlds: World[] = [
 ];
 
 export const allLevels = worlds.flatMap((world) => world.levels);
+
+/** "Level N", numbered by position within its own world (1-based). */
+export function levelDisplayName(levelId: string): string {
+  for (const world of worlds) {
+    const index = world.levels.findIndex((level) => level.id === levelId);
+    if (index !== -1) return `Level ${index + 1}`;
+  }
+  return levelId;
+}

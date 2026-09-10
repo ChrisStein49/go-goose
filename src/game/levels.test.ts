@@ -5,7 +5,7 @@ import { isSolvable } from "./solver";
 
 describe("shipped levels", () => {
   for (const level of allLevels) {
-    it(`${level.id} (${level.name}) is solvable`, () => {
+    it(`${level.id} is solvable`, () => {
       expect(isSolvable(boardFromLevel(level))).toBe(true);
     });
   }

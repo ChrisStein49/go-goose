@@ -6,7 +6,7 @@ import { GameBoard } from "./components/GameBoard";
 import { HowToPlay } from "./components/HowToPlay";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
-import { allLevels } from "./game/levels";
+import { allLevels, levelDisplayName } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
 
@@ -77,7 +77,7 @@ function App() {
         <>
           <div className="level-bar">
             <button onClick={() => setScreen("worlds")}>← Map</button>
-            <span className="level-name">{currentLevel.name}</span>
+            <span className="level-name">{levelDisplayName(currentLevel.id)}</span>
           </div>
 
           <div className="status-bar">
