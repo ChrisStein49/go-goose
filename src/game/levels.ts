@@ -164,6 +164,72 @@ export const worlds: World[] = [
       },
     ],
   },
+  {
+    // Reference examples for hand-authoring new worlds/levels — feel free to
+    // rename, reorder, delete, or move this world once it's no longer needed.
+    id: "world-template",
+    name: "Template",
+    levels: [
+      {
+        // Smallest possible shape: one color, no dead cells.
+        id: "template-l1",
+        rows: 3,
+        cols: 3,
+        cells: [
+          [O(), E, E],
+          [E, O(), O()],
+          [O(), E, E],
+        ],
+      },
+      {
+        // Two colors, no dead cells.
+        id: "template-l2",
+        rows: 3,
+        cols: 4,
+        cells: [
+          [G(), E, E, O()],
+          [G(), E, O(), E],
+          [E, E, E, E],
+        ],
+      },
+      {
+        // Dead cells (D) block movement like a wall — a push stops right
+        // before one, same as it would at the board edge.
+        id: "template-l3",
+        rows: 3,
+        cols: 4,
+        cells: [
+          [O(), E, D, G()],
+          [E, O(), E, E],
+          [E, E, E, G()],
+        ],
+      },
+      {
+        // A larger board — grid size is arbitrary, just set rows/cols to match.
+        id: "template-l4",
+        rows: 4,
+        cols: 6,
+        cells: [
+          [G(), G(), O(), E, O(), E],
+          [P(), E, E, E, E, E],
+          [P(), G(), E, E, E, O()],
+          [P(), E, E, E, E, G()],
+        ],
+      },
+      {
+        // Everything combined: three colors, dead cells, larger board.
+        id: "template-l5",
+        rows: 4,
+        cols: 5,
+        cells: [
+          [E, G(), D, O(), O()],
+          [E, E, E, G(), G()],
+          [D, E, E, E, P()],
+          [E, P(), P(), D, O()],
+        ],
+      },
+    ],
+  },
 ];
 
 export const allLevels = worlds.flatMap((world) => world.levels);
