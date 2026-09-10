@@ -179,6 +179,105 @@ button:not(:disabled):hover {
   color: #8a84a3;
 }
 
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 280px;
+  margin: 20px auto 0;
+}
+
+.menu-button {
+  padding: 14px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.how-to-play,
+.credits,
+.daily-challenge {
+  text-align: left;
+}
+
+.how-to-play section,
+.credits section,
+.daily-challenge section {
+  margin: 20px 0;
+}
+
+.how-to-play h2,
+.credits h2,
+.daily-challenge h2 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.how-to-play p,
+.credits p,
+.daily-challenge p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+  color: #2c2a3a;
+}
+
+.credits-note {
+  color: #4a4560 !important;
+  font-size: 14px;
+}
+
+.how-to-example-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.how-to-arrow {
+  font-size: 22px;
+  color: #6b5fb3;
+}
+
+.mini-board-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.mini-board-figure figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #4a4560;
+  max-width: 160px;
+}
+
+.mini-board {
+  display: grid;
+  gap: 3px;
+  background: #8a7a3a;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.mini-cell {
+  width: 32px;
+  height: 32px;
+  background: #f2ecd8;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-cell-dead {
+  background: #6b6b6b;
+}
+
+.mini-goose-icon {
+  width: 78%;
+  height: 78%;
+}
+
 @media (max-width: 480px) {
   .cell {
     width: 52px;

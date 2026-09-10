@@ -4,9 +4,9 @@ const E: Cell = { kind: "empty" };
 const D: Cell = { kind: "dead" };
 const goose = (color: string): Cell => ({ kind: "goose", color });
 
-const ORANGE = "#e2791e";
-const BLUE = "#1f6fb0";
-const PINK = "#e0509c";
+export const ORANGE = "#e2791e";
+export const BLUE = "#1f6fb0";
+export const PINK = "#e0509c";
 
 const O = () => goose(ORANGE);
 const B = () => goose(BLUE);

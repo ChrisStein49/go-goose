@@ -1,12 +1,19 @@
 import { useState } from "react";
 import "./App.css";
+import { Credits } from "./components/Credits";
+import { DailyChallenge } from "./components/DailyChallenge";
 import { GameBoard } from "./components/GameBoard";
+import { HowToPlay } from "./components/HowToPlay";
 import { LevelSelect } from "./components/LevelSelect";
+import { MainMenu } from "./components/MainMenu";
 import { allLevels } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
 
+type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits";
+
 function App() {
+  const [screen, setScreen] = useState<Screen>("menu");
   const [completed, setCompleted] = useState<Set<string>>(() => loadCompletedLevels());
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
@@ -16,10 +23,7 @@ function App() {
     setCurrentLevel(level);
     setMoveCount(0);
     setComplete(false);
-  }
-
-  function backToMap() {
-    setCurrentLevel(null);
+    setScreen("level");
   }
 
   function handleCompleteChange(isComplete: boolean) {
@@ -37,7 +41,7 @@ function App() {
     const index = allLevels.findIndex((l) => l.id === currentLevel.id);
     const next = allLevels[index + 1];
     if (next) openLevel(next);
-    else backToMap();
+    else setScreen("worlds");
   }
 
   return (
@@ -47,12 +51,32 @@ function App() {
         <p className="subtitle">Push the geese so every color forms one connected flock.</p>
       </header>
 
-      {!currentLevel && <LevelSelect completed={completed} onSelectLevel={openLevel} />}
+      {screen === "menu" && (
+        <MainMenu
+          onPlay={() => setScreen("worlds")}
+          onDailyChallenge={() => setScreen("daily")}
+          onHowToPlay={() => setScreen("how-to-play")}
+          onCredits={() => setScreen("credits")}
+        />
+      )}
 
-      {currentLevel && (
+      {screen === "worlds" && (
         <>
           <div className="level-bar">
-            <button onClick={backToMap}>← Map</button>
+            <button onClick={() => setScreen("menu")}>← Menu</button>
+          </div>
+          <LevelSelect completed={completed} onSelectLevel={openLevel} />
+        </>
+      )}
+
+      {screen === "daily" && <DailyChallenge onBack={() => setScreen("menu")} />}
+      {screen === "how-to-play" && <HowToPlay onBack={() => setScreen("menu")} />}
+      {screen === "credits" && <Credits onBack={() => setScreen("menu")} />}
+
+      {screen === "level" && currentLevel && (
+        <>
+          <div className="level-bar">
+            <button onClick={() => setScreen("worlds")}>← Map</button>
             <span className="level-name">{currentLevel.name}</span>
           </div>
 
