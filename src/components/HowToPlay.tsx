@@ -1,4 +1,4 @@
-import { BLUE, ORANGE, PINK } from "../game/levels";
+import { GREEN, ORANGE, PURPLE } from "../game/levels";
 import type { Cell } from "../game/types";
 import { MiniBoard } from "./MiniBoard";
 
@@ -16,19 +16,19 @@ const pushAfter: Cell[][] = [
 ];
 
 const incompleteExample: Cell[][] = [
-  [g(BLUE), g(BLUE), E, g(BLUE)],
+  [g(GREEN), g(GREEN), E, g(GREEN)],
   [E, E, E, E],
 ];
 const completeExample: Cell[][] = [
-  [g(BLUE), g(BLUE), g(BLUE), E],
+  [g(GREEN), g(GREEN), g(GREEN), E],
   [E, E, E, E],
 ];
 
 const blockedBefore: Cell[][] = [
-  [g(PINK), E, D, E],
+  [g(PURPLE), E, D, E],
 ];
 const blockedAfter: Cell[][] = [
-  [E, g(PINK), D, E],
+  [E, g(PURPLE), D, E],
 ];
 
 interface HowToPlayProps {
@@ -48,9 +48,9 @@ export function HowToPlay({ onBack }: HowToPlayProps) {
           it in as few moves as possible.
         </p>
         <div className="how-to-example-row">
-          <MiniBoard cells={incompleteExample} caption="Not done — one blue goose sits apart" />
+          <MiniBoard cells={incompleteExample} caption="Not done — one green goose sits apart" />
           <span className="how-to-arrow">→</span>
-          <MiniBoard cells={completeExample} caption="Done — all blue geese connected" />
+          <MiniBoard cells={completeExample} caption="Done — all green geese connected" />
         </div>
       </section>
 

@@ -5,12 +5,12 @@ const D: Cell = { kind: "dead" };
 const goose = (color: string): Cell => ({ kind: "goose", color });
 
 export const ORANGE = "#e2791e";
-export const BLUE = "#1f6fb0";
-export const PINK = "#e0509c";
+export const GREEN = "#00BF63";
+export const PURPLE = "#4E2996";
 
 const O = () => goose(ORANGE);
-const B = () => goose(BLUE);
-const P = () => goose(PINK);
+const G = () => goose(GREEN);
+const P = () => goose(PURPLE);
 
 export const worlds: World[] = [
   {
@@ -78,9 +78,9 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [B(), B(), E, O(), B()],
+          [G(), G(), E, O(), G()],
           [E, O(), E, O(), E],
-          [E, P(), O(), B(), P()],
+          [E, P(), O(), G(), P()],
           [E, O(), P(), E, O()],
         ],
       },
@@ -90,8 +90,8 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [E, B(), B(), E, O()],
-          [E, E, B(), O(), E],
+          [E, G(), G(), E, O()],
+          [E, E, G(), O(), E],
           [E, E, E, E, P()],
           [E, P(), P(), O(), E],
         ],
@@ -102,9 +102,9 @@ export const worlds: World[] = [
         rows: 4,
         cols: 6,
         cells: [
-          [B(), O(), O(), O(), E, E],
-          [B(), E, B(), E, E, E],
-          [E, E, E, E, E, B()],
+          [G(), O(), O(), O(), E, E],
+          [G(), E, G(), E, E, E],
+          [E, E, E, E, E, G()],
           [P(), P(), E, E, P(), E],
         ],
       },
@@ -114,9 +114,9 @@ export const worlds: World[] = [
         rows: 4,
         cols: 6,
         cells: [
-          [B(), O(), E, E, E, O()],
-          [B(), B(), E, E, E, E],
-          [P(), E, E, E, E, B()],
+          [G(), O(), E, E, E, O()],
+          [G(), G(), E, E, E, E],
+          [P(), E, E, E, E, G()],
           [E, E, P(), P(), O(), E],
         ],
       },
@@ -132,9 +132,9 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [B(), B(), E, O(), B()],
+          [G(), G(), E, O(), G()],
           [E, O(), D, O(), E],
-          [E, P(), E, B(), P()],
+          [E, P(), E, G(), P()],
           [D, O(), E, E, O()],
         ],
       },
@@ -144,9 +144,9 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [E, E, O(), B(), E],
-          [E, B(), D, P(), E],
-          [B(), O(), E, E, P()],
+          [E, E, O(), G(), E],
+          [E, G(), D, P(), E],
+          [G(), O(), E, E, P()],
           [D, O(), E, E, P()],
         ],
       },
@@ -156,8 +156,8 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [E, B(), D, O(), O()],
-          [E, E, E, B(), B()],
+          [E, G(), D, O(), O()],
+          [E, E, E, G(), G()],
           [D, P(), P(), E, P()],
           [E, E, E, D, O()],
         ],
@@ -168,8 +168,8 @@ export const worlds: World[] = [
         rows: 4,
         cols: 5,
         cells: [
-          [B(), B(), D, O(), E],
-          [E, B(), O(), E, E],
+          [G(), G(), D, O(), E],
+          [E, G(), O(), E, E],
           [D, E, O(), E, E],
           [E, P(), P(), D, P()],
         ],
