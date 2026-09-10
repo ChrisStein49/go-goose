@@ -1,0 +1,187 @@
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  text-align: center;
+  color: #2c2a3a;
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  color: #2c2a3a;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #4a4560;
+  font-size: 15px;
+}
+
+.level-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.level-name {
+  font-weight: 600;
+  min-width: 200px;
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  min-height: 28px;
+}
+
+.complete-badge {
+  background: #3fae5a;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #6b5fb3;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #b3adc9;
+  cursor: default;
+}
+
+button:not(:disabled):hover {
+  background: #5a4fa0;
+}
+
+.game-board-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.game-board {
+  display: grid;
+  gap: 6px;
+  background: #8a7a3a;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  outline: none;
+  touch-action: none;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  background: #f2ecd8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cell-dead {
+  background: #6b6b6b;
+}
+
+.cell-goose {
+  cursor: grab;
+}
+
+.cell-selected {
+  box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 5px #6b5fb3;
+}
+
+.cell-done .goose-icon {
+  filter: drop-shadow(0 0 4px rgba(63, 174, 90, 0.9));
+}
+
+.goose-icon {
+  width: 78%;
+  height: 78%;
+  pointer-events: none;
+}
+
+.board-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.hint {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #4a4560;
+}
+
+.next-level-button {
+  margin-top: 16px;
+  background: #3fae5a;
+}
+
+.next-level-button:hover {
+  background: #359049;
+}
+
+.level-select {
+  text-align: left;
+}
+
+.world-section {
+  margin-bottom: 28px;
+}
+
+.world-section h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #2c2a3a;
+}
+
+.level-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.level-tile {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: #6b5fb3;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.level-tile.level-done {
+  background: #3fae5a;
+}
+
+.level-tile.level-locked {
+  background: #d8d4e8;
+  color: #8a84a3;
+}
+
+@media (max-width: 480px) {
+  .cell {
+    width: 52px;
+    height: 52px;
+  }
+}
