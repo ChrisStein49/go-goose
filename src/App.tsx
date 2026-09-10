@@ -4,16 +4,19 @@ import { Credits } from "./components/Credits";
 import { DailyChallenge } from "./components/DailyChallenge";
 import { GameBoard } from "./components/GameBoard";
 import { HowToPlay } from "./components/HowToPlay";
+import { LevelEditor } from "./components/LevelEditor";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
 import { allLevels, levelDisplayName } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
 
-type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits";
+type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits" | "editor";
 
 function App() {
-  const [screen, setScreen] = useState<Screen>("menu");
+  const [screen, setScreen] = useState<Screen>(() =>
+    window.location.hash === "#editor" ? "editor" : "menu",
+  );
   const [completed, setCompleted] = useState<Set<string>>(() => loadCompletedLevels());
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
@@ -72,6 +75,14 @@ function App() {
       {screen === "daily" && <DailyChallenge onBack={() => setScreen("menu")} />}
       {screen === "how-to-play" && <HowToPlay onBack={() => setScreen("menu")} />}
       {screen === "credits" && <Credits onBack={() => setScreen("menu")} />}
+      {screen === "editor" && (
+        <LevelEditor
+          onBack={() => {
+            window.location.hash = "";
+            setScreen("menu");
+          }}
+        />
+      )}
 
       {screen === "level" && currentLevel && (
         <>

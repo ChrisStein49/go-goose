@@ -278,6 +278,102 @@ button:not(:disabled):hover {
   height: 78%;
 }
 
+.level-editor {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.editor-hint {
+  font-size: 13px;
+  color: #4a4560;
+  margin: 8px 0;
+}
+
+.editor-size-controls {
+  display: flex;
+  gap: 16px;
+  margin: 14px 0;
+}
+
+.editor-size-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #2c2a3a;
+}
+
+.editor-size-controls input {
+  width: 64px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #b3adc9;
+  font: inherit;
+}
+
+.editor-tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.tool-button {
+  padding: 8px 14px;
+}
+
+.tool-button.tool-active {
+  outline: 3px solid #2c2a3a;
+  outline-offset: 2px;
+}
+
+.editor-grid .cell {
+  cursor: pointer;
+}
+
+.editor-status {
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+.editor-ok {
+  color: #2f8a49;
+  font-weight: 600;
+}
+
+.editor-warn {
+  color: #b3541e;
+  font-weight: 600;
+}
+
+.editor-export {
+  margin-top: 20px;
+}
+
+.editor-export h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.editor-export p {
+  font-size: 13px;
+  color: #4a4560;
+  margin: 0 0 8px;
+}
+
+.editor-export textarea {
+  width: 100%;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b3adc9;
+  resize: vertical;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 480px) {
   .cell {
     width: 52px;
