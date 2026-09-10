@@ -356,6 +356,24 @@ button:not(:disabled):hover {
   margin: 0 0 6px;
 }
 
+.editor-id-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #2c2a3a;
+  margin-bottom: 10px;
+  max-width: 220px;
+}
+
+.editor-id-label input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #b3adc9;
+  font: inherit;
+  font-family: ui-monospace, Consolas, monospace;
+}
+
 .editor-export p {
   font-size: 13px;
   color: #4a4560;

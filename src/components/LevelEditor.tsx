@@ -42,6 +42,7 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
   const [testMode, setTestMode] = useState(false);
   const [testKey, setTestKey] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [levelId, setLevelId] = useState("w4-l1");
 
   function resize(newRows: number, newCols: number) {
     newRows = Math.min(MAX_SIZE, Math.max(MIN_SIZE, newRows));
@@ -72,7 +73,7 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
     );
   }, [cells, complete, gooseCount]);
 
-  const code = useMemo(() => generateLevelCode(cells), [cells]);
+  const code = useMemo(() => generateLevelCode(cells, levelId || "custom-level"), [cells, levelId]);
 
   function startTestPlay() {
     setTestKey((k) => k + 1);
@@ -176,6 +177,15 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
 
       <div className="editor-export">
         <h3>Export</h3>
+        <label className="editor-id-label">
+          Level ID (must be unique across every level)
+          <input
+            type="text"
+            value={levelId}
+            onChange={(e) => setLevelId(e.target.value)}
+            placeholder="e.g. w4-l1"
+          />
+        </label>
         <p>Paste this into the <code>levels</code> array of a World in <code>src/game/levels.ts</code>:</p>
         <textarea readOnly value={code} rows={cells.length + 4} />
         <button onClick={copyCode}>{copied ? "Copied!" : "Copy to Clipboard"}</button>
