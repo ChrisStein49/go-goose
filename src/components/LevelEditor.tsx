@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getIncompleteColors, isLevelComplete } from "../game/board";
 import { generateLevelCode } from "../game/levelCode";
 import { GREEN, ORANGE, PURPLE } from "../game/levels";
@@ -64,13 +64,25 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
   const complete = isLevelComplete(cells);
   const gooseCount = cells.flat().filter((c) => c.kind === "goose").length;
 
-  const solvable = useMemo(() => {
-    if (gooseCount === 0) return true;
-    if (complete) return true;
-    return isSolvable(
-      cells.map((row) => row.map((cell) => ({ ...cell }))),
-      { restarts: 15, maxSteps: 250 },
-    );
+  const [solvable, setSolvable] = useState(true);
+  const [checking, setChecking] = useState(false);
+
+  // Debounced: the check below is now exhaustive (exact, not just a
+  // heuristic guess), which can take a couple of seconds on a busy board —
+  // running it on every single click would make painting feel laggy.
+  useEffect(() => {
+    if (gooseCount === 0 || complete) {
+      setChecking(false);
+      setSolvable(true);
+      return;
+    }
+    setChecking(true);
+    const board = cells.map((row) => row.map((cell) => ({ ...cell })));
+    const handle = setTimeout(() => {
+      setSolvable(isSolvable(board, { maxStates: 60_000, restarts: 15, maxSteps: 250 }));
+      setChecking(false);
+    }, 400);
+    return () => clearTimeout(handle);
   }, [cells, complete, gooseCount]);
 
   const code = useMemo(() => generateLevelCode(cells, levelId || "custom-level"), [cells, levelId]);
@@ -162,11 +174,20 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
         {gooseCount > 0 && !complete && (
           <p>
             {incompleteColors.length} color{incompleteColors.length === 1 ? "" : "s"} not yet connected —{" "}
-            {solvable ? (
+            {checking ? (
+              <span>checking…</span>
+            ) : solvable ? (
               <span className="editor-ok">✓ solvable</span>
             ) : (
-              <span className="editor-warn">⚠ not verified solvable (try fewer blocked cells, or more open space)</span>
+              <span className="editor-warn">⚠ not solvable — or too complex for this quick check</span>
             )}
+          </p>
+        )}
+        {gooseCount > 0 && !complete && !checking && !solvable && (
+          <p className="editor-hint">
+            For a very busy board this quick check can time out inconclusive rather than prove it's
+            unsolvable — <code>npx vitest run src/game/levels.test.ts</code> uses a much larger search
+            budget and is the authoritative check once you've pasted a level into levels.ts.
           </p>
         )}
       </div>

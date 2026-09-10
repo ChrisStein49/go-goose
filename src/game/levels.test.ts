@@ -5,8 +5,12 @@ import { isSolvable } from "./solver";
 
 describe("shipped levels", () => {
   for (const level of allLevels) {
-    it(`${level.id} is solvable`, () => {
-      expect(isSolvable(boardFromLevel(level))).toBe(true);
-    });
+    it(
+      `${level.id} is solvable`,
+      () => {
+        expect(isSolvable(boardFromLevel(level))).toBe(true);
+      },
+      20_000,
+    );
   }
 });
