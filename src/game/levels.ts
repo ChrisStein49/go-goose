@@ -630,6 +630,72 @@ export const worlds: World[] = [
 ],
 },
 
+  {
+    id: "world-011",
+    name: "Outer Space",
+    levels: [
+{
+  id: "world-011-1",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, D, E, O()],
+      [E, E, E, E],
+      [G(), D, G(), D],
+      [D, E, E, O()],
+  ],
+},
+{
+  id: "world-011-2",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [E, D, O(), D, E],
+      [G(), D, E, G(), E],
+      [E, E, E, D, O()],
+      [E, D, E, D, D],
+  ],
+},
+{
+  id: "world-011-3",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, D, E, D],
+      [G(), O(), P(), E],
+      [P(), D, D, G()],
+      [O(), E, D, O()],
+  ],
+},
+{
+  id: "world-011-4",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, D, P(), D],
+      [E, P(), G(), E],
+      [O(), D, D, E],
+      [D, D, G(), O()],
+  ],
+},	
+{
+  id: "world-011-5",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [P(), G(), E, E, D],
+      [D, D, E, D, O()],
+      [P(), E, E, E, O()],
+      [D, D, E, D, D],
+      [G(), O(), E, E, D],
+  ],
+},
+
+],
+},
+
+  
+
 ];
 
 export const allLevels = worlds.flatMap((world) => world.levels);
