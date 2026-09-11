@@ -32,6 +32,11 @@
   min-width: 200px;
 }
 
+.world-name {
+  font-weight: 400;
+  color: #4a4560;
+}
+
 .status-bar {
   display: flex;
   flex-wrap: wrap;

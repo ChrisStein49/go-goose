@@ -8,7 +8,7 @@ import { LevelEditor } from "./components/LevelEditor";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
 import { LevelStatusBar } from "./components/LevelStatusBar";
-import { allLevels, levelDisplayName } from "./game/levels";
+import { allLevels, levelDisplayName, worldNameForLevel } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
 
@@ -89,7 +89,11 @@ function App() {
         <>
           <div className="level-bar">
             <button onClick={() => setScreen("worlds")}>← Map</button>
-            <span className="level-name">{levelDisplayName(currentLevel.id)}</span>
+            <span className="level-name">
+              <span className="world-name">{worldNameForLevel(currentLevel.id)}</span>
+              {" · "}
+              {levelDisplayName(currentLevel.id)}
+            </span>
           </div>
 
           <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} complete={complete} />

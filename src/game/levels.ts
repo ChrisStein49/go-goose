@@ -708,3 +708,8 @@ export function levelDisplayName(levelId: string): string {
   }
   return levelId;
 }
+
+/** The name of the World a level belongs to. */
+export function worldNameForLevel(levelId: string): string | undefined {
+  return worlds.find((world) => world.levels.some((level) => level.id === levelId))?.name;
+}
