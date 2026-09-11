@@ -24,10 +24,10 @@ function emptyGrid(rows: number, cols: number): Cell[][] {
   return Array.from({ length: rows }, () => Array.from({ length: cols }, (): Cell => ({ kind: "empty" })));
 }
 
-function cellFromTool(tool: Tool): Cell {
+function cellFromTool(tool: Tool, anchorMode: boolean): Cell {
   if (tool === "empty") return { kind: "empty" };
   if (tool === "dead") return { kind: "dead" };
-  return { kind: "goose", color: tool };
+  return anchorMode ? { kind: "anchor", color: tool } : { kind: "goose", color: tool };
 }
 
 interface LevelEditorProps {
@@ -39,6 +39,7 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
   const [cols, setCols] = useState(5);
   const [cells, setCells] = useState<Cell[][]>(() => emptyGrid(4, 5));
   const [tool, setTool] = useState<Tool>(ORANGE);
+  const [anchorMode, setAnchorMode] = useState(false);
   const [testMode, setTestMode] = useState(false);
   const [testKey, setTestKey] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -57,12 +58,13 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
   }
 
   function paint(r: number, c: number) {
-    setCells((prev) => prev.map((row, ri) => (ri === r ? row.map((cell, ci) => (ci === c ? cellFromTool(tool) : cell)) : row)));
+    const cell = cellFromTool(tool, anchorMode);
+    setCells((prev) => prev.map((row, ri) => (ri === r ? row.map((c2, ci) => (ci === c ? cell : c2)) : row)));
   }
 
   const incompleteColors = getIncompleteColors(cells);
   const complete = isLevelComplete(cells);
-  const gooseCount = cells.flat().filter((c) => c.kind === "goose").length;
+  const gooseCount = cells.flat().filter((c) => c.kind === "goose" || c.kind === "anchor").length;
 
   const [solvable, setSolvable] = useState(true);
   const [checking, setChecking] = useState(false);
@@ -154,15 +156,33 @@ export function LevelEditor({ onBack }: LevelEditorProps) {
         ))}
       </div>
 
+      <label className="editor-anchor-toggle">
+        <input
+          type="checkbox"
+          checked={anchorMode}
+          onChange={(e) => setAnchorMode(e.target.checked)}
+        />
+        📌 Place as fixed anchor (can't move, but still counts for connectivity)
+      </label>
+
       <div className="game-board editor-grid" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
         {cells.map((row, r) =>
           row.map((cell, c) => (
             <div
               key={`${r}-${c}`}
-              className={["cell", cell.kind === "dead" ? "cell-dead" : ""].filter(Boolean).join(" ")}
+              className={[
+                "cell",
+                cell.kind === "dead" ? "cell-dead" : "",
+                cell.kind === "anchor" ? "cell-anchor" : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
               onClick={() => paint(r, c)}
             >
-              {cell.kind === "goose" && <GooseIcon color={cell.color} className="goose-icon" />}
+              {(cell.kind === "goose" || cell.kind === "anchor") && (
+                <GooseIcon color={cell.color} className="goose-icon" />
+              )}
+              {cell.kind === "anchor" && <span className="anchor-pin">📌</span>}
             </div>
           )),
         )}

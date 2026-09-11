@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { pushGoose, isLevelComplete, getIncompleteColors } from "./board";
+import { pushGoose, isLevelComplete, getIncompleteColors, allGooseCells } from "./board";
 import type { Board } from "./types";
 
 const E = { kind: "empty" } as const;
 const D = { kind: "dead" } as const;
 const g = (color: string) => ({ kind: "goose", color }) as const;
+const a = (color: string) => ({ kind: "anchor", color }) as const;
 
 function board(rows: Board): Board {
   return rows;
@@ -83,5 +84,33 @@ describe("isLevelComplete", () => {
     const b = board([[g("blue"), g("pink"), g("blue")]]);
     // blue geese are NOT adjacent to each other (pink sits between them) -> blue incomplete
     expect(getIncompleteColors(b)).toEqual(["blue"]);
+  });
+});
+
+describe("anchors (fixed geese)", () => {
+  it("can never be pushed", () => {
+    const b = board([[a("blue"), E, E]]);
+    expect(pushGoose(b, 0, 0, "right").moved).toBe(false);
+  });
+
+  it("blocks a push like a dead cell would", () => {
+    const b = board([[g("blue"), a("blue"), E]]);
+    const { moved } = pushGoose(b, 0, 0, "right");
+    expect(moved).toBe(false);
+  });
+
+  it("counts toward its color's connectivity requirement", () => {
+    const b = board([[g("blue"), a("blue")]]);
+    expect(isLevelComplete(b)).toBe(true);
+  });
+
+  it("is incomplete when a movable goose hasn't reached its anchor yet", () => {
+    const b = board([[g("blue"), E, a("blue")]]);
+    expect(isLevelComplete(b)).toBe(false);
+  });
+
+  it("is excluded from the list of pushable geese", () => {
+    const b = board([[g("blue"), E, a("blue")]]);
+    expect(allGooseCells(b)).toEqual([[0, 0]]);
   });
 });

@@ -4,6 +4,12 @@ import type { Cell } from "./types";
 function cellCode(cell: Cell): string {
   if (cell.kind === "empty") return "E";
   if (cell.kind === "dead") return "D";
+  if (cell.kind === "anchor") {
+    if (cell.color === ORANGE) return "AO()";
+    if (cell.color === GREEN) return "AG()";
+    if (cell.color === PURPLE) return "AP()";
+    return `anchor(${JSON.stringify(cell.color)})`;
+  }
   if (cell.color === ORANGE) return "O()";
   if (cell.color === GREEN) return "G()";
   if (cell.color === PURPLE) return "P()";

@@ -16,9 +16,18 @@ export function MiniBoard({ cells, caption }: MiniBoardProps) {
           row.map((cell, c) => (
             <div
               key={`${r}-${c}`}
-              className={["mini-cell", cell.kind === "dead" ? "mini-cell-dead" : ""].filter(Boolean).join(" ")}
+              className={[
+                "mini-cell",
+                cell.kind === "dead" ? "mini-cell-dead" : "",
+                cell.kind === "anchor" ? "mini-cell-anchor" : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
             >
-              {cell.kind === "goose" && <GooseIcon color={cell.color} className="mini-goose-icon" />}
+              {(cell.kind === "goose" || cell.kind === "anchor") && (
+                <GooseIcon color={cell.color} className="mini-goose-icon" />
+              )}
+              {cell.kind === "anchor" && <span className="mini-anchor-pin">📌</span>}
             </div>
           )),
         )}

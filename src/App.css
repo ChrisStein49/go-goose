@@ -122,6 +122,25 @@ button:not(:disabled):hover {
   cursor: grab;
 }
 
+.cell-anchor {
+  background: #8f8f84;
+  position: relative;
+  cursor: default;
+}
+
+.cell-anchor .goose-icon {
+  opacity: 0.9;
+}
+
+.anchor-pin {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 11px;
+  line-height: 1;
+  pointer-events: none;
+}
+
 .cell-selected {
   box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 5px #6b5fb3;
 }
@@ -288,6 +307,19 @@ button:not(:disabled):hover {
   background: #6b6b6b;
 }
 
+.mini-cell-anchor {
+  background: #8f8f84;
+  position: relative;
+}
+
+.mini-anchor-pin {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 8px;
+  line-height: 1;
+}
+
 .mini-goose-icon {
   width: 78%;
   height: 78%;
@@ -336,6 +368,16 @@ button:not(:disabled):hover {
 
 .tool-button {
   padding: 8px 14px;
+}
+
+.editor-anchor-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #2c2a3a;
+  margin-bottom: 14px;
+  cursor: pointer;
 }
 
 .tool-button.tool-active {

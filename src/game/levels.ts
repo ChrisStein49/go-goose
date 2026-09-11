@@ -3,6 +3,7 @@ import type { Cell, World } from "./types";
 const E: Cell = { kind: "empty" };
 const D: Cell = { kind: "dead" };
 const goose = (color: string): Cell => ({ kind: "goose", color });
+const anchor = (color: string): Cell => ({ kind: "anchor", color });
 
 export const ORANGE = "#e2791e";
 export const GREEN = "#00BF63";
@@ -11,6 +12,12 @@ export const PURPLE = "#4E2996";
 const O = () => goose(ORANGE);
 const G = () => goose(GREEN);
 const P = () => goose(PURPLE);
+// Fixed/pinned geese (see the "anchor" cell kind) — can never move, but
+// still count toward their color's connectivity requirement. Exported for
+// use when hand-authoring new levels (e.g. `AO()` in a level's cells).
+export const AO = () => anchor(ORANGE);
+export const AG = () => anchor(GREEN);
+export const AP = () => anchor(PURPLE);
 
 export const worlds: World[] = [
 

@@ -5,6 +5,7 @@ import { MiniBoard } from "./MiniBoard";
 const E: Cell = { kind: "empty" };
 const D: Cell = { kind: "dead" };
 const g = (color: string): Cell => ({ kind: "goose", color });
+const a = (color: string): Cell => ({ kind: "anchor", color });
 
 const pushBefore: Cell[][] = [
   [g(ORANGE), E, E, E],
@@ -30,6 +31,9 @@ const blockedBefore: Cell[][] = [
 const blockedAfter: Cell[][] = [
   [E, g(PURPLE), D, E],
 ];
+
+const anchorBefore: Cell[][] = [[g(GREEN), E, a(GREEN)]];
+const anchorAfter: Cell[][] = [[E, g(GREEN), a(GREEN)]];
 
 interface HowToPlayProps {
   onBack: () => void;
@@ -79,6 +83,21 @@ export function HowToPlay({ onBack }: HowToPlayProps) {
           <MiniBoard cells={blockedBefore} caption="Before: push right" />
           <span className="how-to-arrow">→</span>
           <MiniBoard cells={blockedAfter} caption="Stopped by the blocked cell" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Fixed Geese</h2>
+        <p>
+          Some levels include a goose that's permanently pinned in place (marked with 📌). It can
+          never be pushed, and it blocks movement just like a blocked cell — but it still counts
+          toward its color's connection requirement, so you'll need to bring your other geese of
+          that color to it.
+        </p>
+        <div className="how-to-example-row">
+          <MiniBoard cells={anchorBefore} caption="Before: push right" />
+          <span className="how-to-arrow">→</span>
+          <MiniBoard cells={anchorAfter} caption="Connected to the pinned goose" />
         </div>
       </section>
     </div>

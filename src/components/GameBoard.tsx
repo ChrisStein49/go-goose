@@ -127,7 +127,8 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBo
             const isSelected = selected?.[0] === r && selected?.[1] === c;
             const isDead = cell.kind === "dead";
             const isGoose = cell.kind === "goose";
-            const isDone = isGoose && !incompleteColors.has(cell.color);
+            const isAnchor = cell.kind === "anchor";
+            const isDone = (isGoose || isAnchor) && !incompleteColors.has(cell.color);
             return (
               <div
                 key={`${r}-${c}`}
@@ -135,6 +136,7 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBo
                   "cell",
                   isDead ? "cell-dead" : "",
                   isGoose ? "cell-goose" : "",
+                  isAnchor ? "cell-anchor" : "",
                   isSelected ? "cell-selected" : "",
                   isDone ? "cell-done" : "",
                 ]
@@ -144,7 +146,8 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBo
                 onPointerMove={handlePointerMove}
                 onPointerUp={(e) => handlePointerUp(e, r, c)}
               >
-                {isGoose && <GooseIcon color={cell.color} className="goose-icon" />}
+                {(isGoose || isAnchor) && <GooseIcon color={cell.color} className="goose-icon" />}
+                {isAnchor && <span className="anchor-pin">📌</span>}
               </div>
             );
           }),

@@ -15,6 +15,11 @@ function inBounds(board: Board, r: number, c: number): boolean {
   return r >= 0 && r < board.length && c >= 0 && c < board[0].length;
 }
 
+/** The color this cell counts toward for connectivity, if any (both movable geese and fixed anchors). */
+function gooseColor(cell: Cell): string | undefined {
+  return cell.kind === "goose" || cell.kind === "anchor" ? cell.color : undefined;
+}
+
 export interface PushResult {
   board: Board;
   moved: boolean;
@@ -24,8 +29,8 @@ export interface PushResult {
  * Pushes the goose at (row, col) in `direction`, carrying along any
  * contiguous chain of geese immediately ahead of it. The chain slides as
  * far as the run of empty cells beyond it allows, stopping at the board
- * edge or a dead cell. Returns the same board reference (moved: false)
- * when the push has no effect.
+ * edge, a dead cell, or an anchor (a fixed goose). Returns the same board
+ * reference (moved: false) when the push has no effect.
  */
 export function pushGoose(
   board: Board,
@@ -45,7 +50,7 @@ export function pushGoose(
     c += dc;
   }
 
-  if (!inBounds(board, r, c) || board[r][c].kind === "dead") {
+  if (!inBounds(board, r, c) || board[r][c].kind === "dead" || board[r][c].kind === "anchor") {
     return { board, moved: false };
   }
 
@@ -75,21 +80,21 @@ function findGooseGroups(board: Board): Map<string, [number, number][]> {
   const groups = new Map<string, [number, number][]>();
   for (let r = 0; r < board.length; r++) {
     for (let c = 0; c < board[r].length; c++) {
-      const cell = board[r][c];
-      if (cell.kind === "goose") {
-        const list = groups.get(cell.color) ?? [];
+      const color = gooseColor(board[r][c]);
+      if (color !== undefined) {
+        const list = groups.get(color) ?? [];
         list.push([r, c]);
-        groups.set(cell.color, list);
+        groups.set(color, list);
       }
     }
   }
   return groups;
 }
 
-/** Number of separate orthogonally-connected components within `cells` (all same color). */
+/** Number of separate orthogonally-connected components within `cells` (all same color; geese and anchors both count). */
 function countComponents(board: Board, cells: [number, number][]): number {
   if (cells.length <= 1) return cells.length;
-  const color = (board[cells[0][0]][cells[0][1]] as Extract<Cell, { kind: "goose" }>).color;
+  const color = gooseColor(board[cells[0][0]][cells[0][1]]);
   const key = (r: number, c: number) => `${r},${c}`;
   const remaining = new Set(cells.map(([r, c]) => key(r, c)));
   let components = 0;
@@ -113,8 +118,7 @@ function countComponents(board: Board, cells: [number, number][]): number {
         const nc = c + dc;
         const nk = key(nr, nc);
         if (!remaining.has(nk)) continue;
-        const neighbor = board[nr][nc];
-        if (neighbor.kind !== "goose" || neighbor.color !== color) continue;
+        if (gooseColor(board[nr][nc]) !== color) continue;
         remaining.delete(nk);
         stack.push([nr, nc]);
       }
@@ -148,6 +152,7 @@ export function disconnectionScore(board: Board): number {
   return score;
 }
 
+/** Cells holding a movable goose — deliberately excludes anchors, which can never be pushed. */
 export function allGooseCells(board: Board): [number, number][] {
   const cells: [number, number][] = [];
   for (let r = 0; r < board.length; r++) {
