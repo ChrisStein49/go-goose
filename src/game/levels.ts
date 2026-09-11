@@ -765,7 +765,320 @@ export const worlds: World[] = [
 ],
 },
 
-  
+  {
+    id: "world-013",
+    name: "Sand",
+    levels: [
+{
+  id: "world-013-1",
+  rows: 3,
+  cols: 3,
+  cells: [
+      [O(), O(), E],
+      [E, E, O()],
+      [AO(), E, O()],
+  ],
+},
+{
+  id: "world-013-2",
+  rows: 3,
+  cols: 3,
+  cells: [
+      [E, E, AO()],
+      [E, E, O()],
+      [O(), AO(), E],
+  ],
+},
+{
+  id: "world-013-3",
+  rows: 3,
+  cols: 5,
+  cells: [
+      [D, D, D, O(), E],
+      [E, E, AO(), D, E],
+      [E, E, E, E, O()],
+  ],
+},
+{
+  id: "world-013-4",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, D, E, O()],
+      [O(), E, AO(), D],
+      [E, E, E, E],
+      [O(), E, E, E],
+  ],
+},	
+{
+  id: "world-013-5",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [E, E, E, AO(), E],
+      [E, E, AO(), E, E],
+      [E, AO(), E, E, E],
+      [O(), E, E, E, O()],
+  ],
+},
+
+],
+},
+
+  {
+    id: "world-014",
+    name: "Dune",
+    levels: [
+{
+  id: "world-014-1",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [G(), E, E, E],
+      [E, AG(), E, E],
+      [E, E, AG(), E],
+      [G(), E, E, E],
+  ],
+},
+{
+  id: "world-014-2",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [G(), E, AG(), D],
+      [AG(), E, E, G()],
+      [E, E, AG(), E],
+      [E, E, E, E],
+  ],
+},
+{
+  id: "world-014-3",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, E, E, G()],
+      [E, AG(), D, E],
+      [E, E, E, G()],
+      [E, AG(), E, E],
+  ],
+},
+{
+  id: "world-014-4",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [P(), D, E, E, AP()],
+      [E, P(), D, E, E],
+      [D, P(), AP(), E, E],
+      [E, E, P(), D, E],
+      [AP(), E, P(), E, P()],
+  ],
+},	
+{
+  id: "world-014-5",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [AO(), E, E, E, E],
+      [E, E, AO(), E, E],
+      [AO(), O(), D, E, AO()],
+      [O(), O(), E, O(), D],
+  ],
+},
+
+],
+},
+
+   {
+    id: "world-015",
+    name: "Mars",
+    levels: [
+{
+  id: "world-015-1",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [D, AO(), E, AO(), E],
+      [E, E, E, E, E],
+      [E, D, E, E, E],
+      [E, O(), E, E, D],
+  ],
+},
+{
+  id: "world-015-2",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [O(), E, AO(), E],
+      [E, E, E, E],
+      [E, D, AO(), E],
+      [E, O(), E, E],
+  ],
+},
+{
+  id: "world-015-3",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [O(), E, O(), E],
+      [E, AO(), AO(), E],
+      [E, E, E, E],
+      [E, AO(), E, E],
+  ],
+},
+{
+  id: "world-015-4",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [AO(), E, AO(), E, O()],
+      [E, E, E, E, E],
+      [E, E, AO(), E, D],
+      [D, E, E, E, E],
+      [O(), E, AO(), O(), E],
+  ],
+},	
+{
+  id: "world-015-5",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [D, O(), E, D],
+      [AO(), E, E, AO()],
+      [O(), AO(), E, E],
+      [O(), E, E, AO()],
+  ],
+},
+
+],
+},
+
+  {
+    id: "world-016",
+    name: "North Pole",
+    levels: [
+{
+  id: "world-016-1",
+  rows: 3,
+  cols: 4,
+  cells: [
+      [AO(), E, O(), AP()],
+      [AO(), AP(), E, D],
+      [P(), E, E, P()],
+  ],
+},
+{
+  id: "world-016-2",
+  rows: 3,
+  cols: 4,
+  cells: [
+      [P(), O(), O(), E],
+      [P(), AO(), P(), D],
+      [P(), O(), E, AP()],
+  ],
+},
+{
+  id: "world-016-3",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [AP(), E, P(), E],
+      [D, AO(), E, AO()],
+      [P(), E, E, E],
+      [O(), AO(), O(), E],
+  ],
+},
+{
+  id: "world-016-4",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [O(), P(), E, AO(), AP()],
+      [E, AP(), O(), E, P()],
+      [P(), E, O(), O(), O()],
+      [D, AO(), D, P(), O()],
+  ],
+},	
+{
+  id: "world-016-5",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [O(), P(), P(), AO(), O()],
+      [D, P(), P(), P(), P()],
+      [P(), E, E, E, P()],
+      [O(), D, AO(), O(), P()],
+  ],
+},
+
+],
+},
+
+   {
+    id: "world-017",
+    name: "Canyon",
+    levels: [
+{
+  id: "world-017-1",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [E, O(), AP(), AO()],
+      [O(), E, O(), P()],
+      [O(), AO(), P(), P()],
+      [AP(), O(), P(), E],
+  ],
+},
+{
+  id: "world-017-2",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [D, P(), AO(), D],
+      [E, P(), G(), E],
+      [E, AG(), AP(), P()],
+      [P(), E, O(), G()],
+  ],
+},
+{
+  id: "world-017-3",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [O(), P(), E, E, E],
+      [D, D, G(), D, P()],
+      [E, P(), E, AO(), D],
+      [D, AP(), O(), G(), O()],
+  ],
+},
+{
+  id: "world-017-4",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [AG(), G(), G(), P()],
+      [O(), O(), AP(), O()],
+      [P(), E, O(), G()],
+      [D, AP(), G(), E],
+  ],
+},	
+{
+  id: "world-017-5",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [G(), G(), E, O(), G()],
+      [G(), AO(), E, E, O()],
+      [AG(), P(), E, AG(), E],
+      [E, AO(), E, AP(), D],
+      [G(), G(), G(), E, O()],
+  ],
+},
+
+],
+},
+
+
 
 ];
 
