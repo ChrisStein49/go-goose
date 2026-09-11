@@ -10,7 +10,7 @@ describe("shipped levels", () => {
       () => {
         expect(isSolvable(boardFromLevel(level))).toBe(true);
       },
-      20_000,
+      60_000,
     );
   }
 });

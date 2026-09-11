@@ -694,6 +694,70 @@ export const worlds: World[] = [
 ],
 },
 
+  {
+    id: "world-012",
+    name: "Volcano",
+    levels: [
+{
+  id: "world-012-1",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [O(), G(), E, D, P(), G()],
+      [D, E, D, P(), D, P()],
+      [O(), E, D, E, P(), E],
+      [D, E, E, E, D, E],
+      [D, E, D, E, D, G()],
+  ],
+},
+{
+  id: "world-012-2",
+  rows: 4,
+  cols: 4,
+  cells: [
+      [O(), E, D, D],
+      [D, P(), O(), E],
+      [D, E, D, E],
+      [P(), G(), D, G()],
+  ],
+},
+{
+  id: "world-012-3",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [O(), P(), D, D, G()],
+      [D, O(), E, G(), G()],
+      [D, P(), D, G(), O()],
+      [E, E, E, D, O()],
+  ],
+},
+{
+  id: "world-012-4",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [G(), P(), E, D, P()],
+      [D, D, E, E, O()],
+      [G(), O(), E, D, O()],
+      [D, O(), O(), P(), D],
+  ],
+},	
+{
+  id: "world-012-5",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [G(), O(), P(), D, E],
+      [D, E, D, E, P()],
+      [D, O(), P(), G(), O()],
+      [E, O(), D, D, P()],
+  ],
+},
+
+],
+},
+
   
 
 ];

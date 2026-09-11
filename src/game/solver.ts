@@ -68,7 +68,7 @@ class MinHeap<T> {
  */
 export function exhaustiveSolve(
   board: Board,
-  { maxStates = 300_000, heuristicWeight = 5 }: { maxStates?: number; heuristicWeight?: number } = {},
+  { maxStates = 1_500_000, heuristicWeight = 5 }: { maxStates?: number; heuristicWeight?: number } = {},
 ): boolean | null {
   if (isLevelComplete(board)) return true;
 
