@@ -1078,6 +1078,208 @@ export const worlds: World[] = [
 ],
 },
 
+  {
+    id: "world-018", 
+    name: "Fountain",
+    levels: [
+{
+  id: "world-018-1",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [D, E, AO(), E, AO()],
+      [G(), E, E, E, O()],
+      [E, AG(), AO(), G(), E],
+      [E, E, E, E, E],
+      [AG(), E, AG(), O(), E],
+  ],
+},
+{
+  id: "world-018-2",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [AG(), E, G(), E, O()],
+      [E, E, D, E, AO()],
+      [AG(), E, AG(), E, E],
+      [G(), E, E, E, AO()],
+  ],
+},
+{
+  id: "world-018-3",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [O(), E, E, E, E, E],
+      [G(), E, AO(), E, D, E],
+      [AG(), E, AG(), AO(), E, E],
+      [O(), E, E, E, E, G()],
+      [AG(), E, AO(), E, O(), D],
+  ],
+},
+{
+  id: "world-018-4",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [D, AO(), D, G(), O()],
+      [G(), E, E, O(), D],
+      [E, AG(), E, O(), AG()],
+      [E, E, AO(), O(), E],
+      [G(), AO(), O(), E, AG()],
+  ],
+},	
+{
+  id: "world-018-5",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [G(), O(), AP(), D, AG()],
+      [AO(), E, E, AG(), P()],
+      [E, E, AP(), E, E],
+      [AO(), E, AO(), E, AG()],
+      [E, G(), G(), E, O()],
+  ],
+},
+
+],
+},
+
+  {
+    id: "world-019", 
+    name: "Ocean",
+    levels: [
+{
+  id: "world-019-1",
+  rows: 3,
+  cols: 6,
+  cells: [
+      [O(), AP(), D, E, AO(), O()],
+      [G(), G(), P(), E, AG(), E],
+      [E, AP(), AG(), O(), P(), E],
+  ],
+},
+{
+  id: "world-019-2",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [AO(), P(), AO(), O(), E],
+      [G(), G(), P(), E, P()],
+      [O(), AP(), AG(), E, P()],
+      [AG(), P(), E, E, AP()],
+  ],
+},
+{
+  id: "world-019-3",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [AO(), E, AO(), AP(), G()],
+      [E, E, E, E, P()],
+      [AG(), D, E, E, E],
+      [O(), E, E, E, P()],
+      [AG(), P(), AG(), AP(), G()],
+  ],
+},
+{
+  id: "world-019-4",
+  rows: 4,
+  cols: 5,
+  cells: [
+      [AO(), E, AO(), E, AP()],
+      [E, E, P(), E, E],
+      [O(), AO(), AG(), AG(), AP()],
+      [O(), G(), E, E, E],
+  ],
+},
+{
+  id: "world-019-5",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [AO(), E, AO(), AG(), D, O()],
+      [E, E, E, E, E, E],
+      [E, E, E, AG(), AP(), E],
+      [E, AG(), E, AG(), E, E],
+      [E, G(), E, P(), G(), E],
+  ],
+},
+
+],
+},
+
+  {
+    id: "world-020", 
+    name: "Lava",
+    levels: [
+{
+  id: "world-020-1",
+  rows: 3,
+  cols: 6,
+  cells: [
+      [O(), AP(), D, E, AO(), O()],
+      [G(), G(), P(), E, AG(), E],
+      [E, AP(), AG(), O(), P(), E],
+  ],
+},
+{
+  id: "world-020-2",
+  rows: 6,
+  cols: 6,
+  cells: [
+      [O(), G(), P(), AO(), D, AG()],
+      [E, E, G(), AG(), O(), O()],
+      [D, E, D, AG(), O(), O()],
+      [O(), E, E, E, E, G()],
+      [AP(), D, E, D, AG(), P()],
+      [G(), E, E, E, D, E],
+  ],
+},
+{
+  id: "world-020-3",
+  rows: 6,
+  cols: 6,
+  cells: [
+      [O(), E, AP(), E, E, P()],
+      [E, G(), E, D, E, E],
+      [G(), D, E, E, E, AG()],
+      [AO(), P(), E, E, AG(), O()],
+      [P(), P(), AP(), G(), O(), O()],
+      [P(), P(), P(), AG(), O(), O()],
+  ],
+},
+{
+  id: "world-020-4",
+  rows: 7,
+  cols: 7,
+  cells: [
+      [AO(), G(), D, AG(), D, E, D],
+      [G(), E, E, E, E, E, E],
+      [E, E, AO(), D, AG(), E, O()],
+      [E, D, P(), P(), P(), O(), O()],
+      [E, E, AP(), D, D, O(), O()],
+      [E, E, E, E, E, E, O()],
+      [D, G(), D, D, AP(), E, D],
+  ],
+},
+{
+  id: "world-020-5",
+  rows: 7,
+  cols: 7,
+  cells: [
+      [E, E, O(), E, AP(), G(), P()],
+      [AO(), E, E, G(), E, P(), E],
+      [G(), E, AO(), E, E, E, P()],
+      [AO(), E, E, E, AG(), E, AG()],
+      [AO(), E, AO(), E, E, E, AG()],
+      [E, E, E, E, E, E, E],
+      [E, E, D, O(), AG(), O(), AG()],
+  ],
+},
+
+],
+},
 
 
 ];

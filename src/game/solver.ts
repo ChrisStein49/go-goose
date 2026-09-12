@@ -7,10 +7,26 @@ function serialize(board: Board): string {
   return board
     .map((row) =>
       row
-        .map((cell: Cell) => (cell.kind === "goose" ? `g${cell.color}` : cell.kind[0]))
+        .map((cell: Cell) =>
+          cell.kind === "goose" || cell.kind === "anchor" ? `${cell.kind[0]}${cell.color}` : cell.kind[0],
+        )
         .join(","),
     )
     .join("|");
+}
+
+/** Inverse of `serialize` — lets the search hold compact string keys instead of full board
+ * clones while queued, and only materialize a real Board when actually expanding a state. */
+function deserialize(key: string): Board {
+  return key.split("|").map((row) =>
+    row.split(",").map((code): Cell => {
+      if (code === "e") return { kind: "empty" };
+      if (code === "d") return { kind: "dead" };
+      if (code[0] === "g") return { kind: "goose", color: code.slice(1) };
+      if (code[0] === "a") return { kind: "anchor", color: code.slice(1) };
+      throw new Error(`unrecognized cell code: ${code}`);
+    }),
+  );
 }
 
 /** Minimal binary min-heap, ordered by `priority` (lower first). */
@@ -57,27 +73,28 @@ class MinHeap<T> {
 }
 
 /**
- * Exhaustive best-first search: explores states ordered by
- * `movesSoFar + disconnectionScore * weight`, so it tries the most-promising
- * (closest to fully connected) states first instead of blindly expanding
- * breadth-first. This finds solutions far faster than plain BFS for these
- * connectivity puzzles, while remaining exhaustive — if the queue empties
- * without ever reaching a complete state, that's a real proof there is none.
- * Returns `null` only if `maxStates` is hit first (search space too large
- * to finish; genuinely inconclusive, not a proof either way).
+ * Exhaustive best-first search for one fixed `heuristicWeight`: explores
+ * states ordered by `movesSoFar + disconnectionScore * weight`, so it tries
+ * the most-promising (closest to fully connected) states first instead of
+ * blindly expanding breadth-first. Remains exhaustive regardless of weight —
+ * if the queue empties without ever reaching a complete state, every
+ * reachable state was visited, so that's a real proof there is none. Returns
+ * `null` only if `maxStates` is hit first (search space too large to finish
+ * under this weight; genuinely inconclusive, not a proof either way).
  */
-export function exhaustiveSolve(
+function exhaustiveSolveWithWeight(
   board: Board,
-  { maxStates = 1_500_000, heuristicWeight = 5 }: { maxStates?: number; heuristicWeight?: number } = {},
+  maxStates: number,
+  heuristicWeight: number,
 ): boolean | null {
-  if (isLevelComplete(board)) return true;
-
-  const seen = new Set<string>([serialize(board)]);
-  const queue = new MinHeap<{ board: Board; depth: number }>();
-  queue.push(disconnectionScore(board) * heuristicWeight, { board, depth: 0 });
+  const startKey = serialize(board);
+  const seen = new Set<string>([startKey]);
+  const queue = new MinHeap<{ key: string; depth: number }>();
+  queue.push(disconnectionScore(board) * heuristicWeight, { key: startKey, depth: 0 });
 
   while (queue.size > 0) {
-    const { board: current, depth } = queue.pop()!;
+    const { key: currentKey, depth } = queue.pop()!;
+    const current = deserialize(currentKey);
 
     for (const [r, c] of allGooseCells(current)) {
       for (const direction of DIRECTIONS) {
@@ -89,15 +106,50 @@ export function exhaustiveSolve(
         if (isLevelComplete(result.board)) return true;
         if (seen.size > maxStates) return null;
         const nextDepth = depth + 1;
-        queue.push(nextDepth + disconnectionScore(result.board) * heuristicWeight, {
-          board: result.board,
-          depth: nextDepth,
-        });
+        queue.push(nextDepth + disconnectionScore(result.board) * heuristicWeight, { key, depth: nextDepth });
       }
     }
   }
 
   return false; // queue exhausted without finding a complete state — truly unsolvable
+}
+
+// A single weight can run out of budget on a large/dense board before
+// finding anything, even though the level is solvable — a greedier weight
+// often finds *a* path far faster there (at the cost of a longer path,
+// which doesn't matter here since we only care whether one exists). Since
+// exhausting the queue under ANY weight is already a full proof (the weight
+// only changes exploration order, not which states are reachable), a
+// definitive true/false from any attempt is authoritative — only a `null`
+// (budget spent, inconclusive) means try the next, greedier weight. Each
+// tier gets a smaller slice of the budget than the last resort: a low
+// weight that's going to struggle on a hard board tends to struggle right
+// up to whatever cap it's given, so there's little point letting it spend
+// the *entire* budget before escalating — save most of it for the
+// greediest, most reliable-on-hard-boards attempt.
+const SOLVABILITY_TIERS: { heuristicWeight: number; budgetShare: number }[] = [
+  { heuristicWeight: 5, budgetShare: 0.15 },
+  { heuristicWeight: 15, budgetShare: 0.35 },
+  { heuristicWeight: 30, budgetShare: 1 },
+];
+
+/** See `exhaustiveSolveWithWeight` — this retries with greedier weights when the search is inconclusive. */
+export function exhaustiveSolve(
+  board: Board,
+  { maxStates = 1_500_000 }: { maxStates?: number } = {},
+): boolean | null {
+  if (isLevelComplete(board)) return true;
+
+  let inconclusive = false;
+  for (const { heuristicWeight, budgetShare } of SOLVABILITY_TIERS) {
+    const result = exhaustiveSolveWithWeight(board, Math.round(maxStates * budgetShare), heuristicWeight);
+    if (result === null) {
+      inconclusive = true;
+      continue;
+    }
+    return result;
+  }
+  return inconclusive ? null : false;
 }
 
 /**
@@ -113,12 +165,14 @@ function bestFirstPathLength(
 ): number | null {
   if (isLevelComplete(board)) return 0;
 
-  const seen = new Set<string>([serialize(board)]);
-  const queue = new MinHeap<{ board: Board; depth: number }>();
-  queue.push(disconnectionScore(board) * heuristicWeight, { board, depth: 0 });
+  const startKey = serialize(board);
+  const seen = new Set<string>([startKey]);
+  const queue = new MinHeap<{ key: string; depth: number }>();
+  queue.push(disconnectionScore(board) * heuristicWeight, { key: startKey, depth: 0 });
 
   while (queue.size > 0) {
-    const { board: current, depth } = queue.pop()!;
+    const { key: currentKey, depth } = queue.pop()!;
+    const current = deserialize(currentKey);
     for (const [r, c] of allGooseCells(current)) {
       for (const direction of DIRECTIONS) {
         const result = pushGoose(current, r, c, direction);
@@ -129,10 +183,7 @@ function bestFirstPathLength(
         if (isLevelComplete(result.board)) return depth + 1;
         if (seen.size > maxStates) return null;
         const nextDepth = depth + 1;
-        queue.push(nextDepth + disconnectionScore(result.board) * heuristicWeight, {
-          board: result.board,
-          depth: nextDepth,
-        });
+        queue.push(nextDepth + disconnectionScore(result.board) * heuristicWeight, { key, depth: nextDepth });
       }
     }
   }
@@ -150,12 +201,14 @@ function boundedBfs(board: Board, maxDepth: number, maxStates: number): BoundedB
   if (maxDepth <= 0) return isLevelComplete(board) ? { kind: "found", depth: 0 } : { kind: "noneWithinBound" };
   if (isLevelComplete(board)) return { kind: "found", depth: 0 };
 
-  const seen = new Set<string>([serialize(board)]);
-  let frontier: Board[] = [board];
+  const startKey = serialize(board);
+  const seen = new Set<string>([startKey]);
+  let frontier: string[] = [startKey];
 
   for (let depth = 1; depth <= maxDepth; depth++) {
-    const next: Board[] = [];
-    for (const current of frontier) {
+    const next: string[] = [];
+    for (const currentKey of frontier) {
+      const current = deserialize(currentKey);
       for (const [r, c] of allGooseCells(current)) {
         for (const direction of DIRECTIONS) {
           const result = pushGoose(current, r, c, direction);
@@ -164,7 +217,7 @@ function boundedBfs(board: Board, maxDepth: number, maxStates: number): BoundedB
           if (seen.has(key)) continue;
           seen.add(key);
           if (isLevelComplete(result.board)) return { kind: "found", depth };
-          next.push(result.board);
+          next.push(key);
         }
       }
       if (seen.size > maxStates) return { kind: "capped" };
@@ -302,7 +355,6 @@ export function isSolvable(
     maxSteps?: number;
     restarts?: number;
     maxStates?: number;
-    heuristicWeight?: number;
   } = {},
 ): boolean {
   const exact = exhaustiveSolve(board, options);
