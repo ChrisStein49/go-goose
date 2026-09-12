@@ -396,11 +396,11 @@ export const worlds: World[] = [
 {
   id: "world-007-1",
   rows: 3,
-  cols: 5,
+  cols: 4,
   cells: [
-      [D, O(), P(), D, D],
-      [O(), P(), O(), O(), E],
-      [E, O(), D, P(), E],
+      [O(), D, O(), P()],
+      [P(), E, P(), D],
+      [E, P(), P(), O()],
   ],
 },
 {
@@ -1215,12 +1215,13 @@ export const worlds: World[] = [
     levels: [
 {
   id: "world-020-1",
-  rows: 3,
+  rows: 4,
   cols: 6,
   cells: [
-      [O(), AP(), D, E, AO(), O()],
-      [G(), G(), P(), E, AG(), E],
-      [E, AP(), AG(), O(), P(), E],
+      [AO(), P(), G(), G(), G(), G()],
+      [D, E, AO(), E, AG(), E],
+      [AG(), P(), E, AP(), O(), E],
+      [O(), E, AG(), E, E, G()],
   ],
 },
 {
