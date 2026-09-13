@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getIncompleteColors, isLevelComplete } from "../game/board";
 import { generateLevelCode } from "../game/levelCode";
 import { GREEN, ORANGE, PURPLE } from "../game/levels";
 import { scramble } from "../game/reverseGenerator";
+import { bestKnownSolutionLength, type BestKnownResult } from "../game/solver";
 import type { Cell, Level } from "../game/types";
 import { GameBoard } from "./GameBoard";
 import { GooseIcon } from "./GooseIcon";
@@ -61,6 +62,26 @@ export function ReverseEditor({ onBack }: ReverseEditorProps) {
   const [testKey, setTestKey] = useState(0);
   const [levelId, setLevelId] = useState("w-generated-1");
   const [copied, setCopied] = useState(false);
+  const [bestKnown, setBestKnown] = useState<BestKnownResult | null>(null);
+  const [checkingBestKnown, setCheckingBestKnown] = useState(false);
+
+  // Applying N reverse moves only proves the puzzle is solvable in AT MOST N
+  // moves — it says nothing about whether a shortcut exists. Only the real
+  // solver can answer that, so check it every time a new puzzle is generated.
+  useEffect(() => {
+    if (!scrambled) {
+      setBestKnown(null);
+      setCheckingBestKnown(false);
+      return;
+    }
+    setCheckingBestKnown(true);
+    const board = scrambled.cells.map((row) => row.map((cell) => ({ ...cell })));
+    const handle = setTimeout(() => {
+      setBestKnown(bestKnownSolutionLength(board, { maxStates: 150_000 }));
+      setCheckingBestKnown(false);
+    }, 50);
+    return () => clearTimeout(handle);
+  }, [scrambled]);
 
   function resize(newRows: number, newCols: number) {
     newRows = Math.min(MAX_SIZE, Math.max(MIN_SIZE, newRows));
@@ -224,6 +245,29 @@ export function ReverseEditor({ onBack }: ReverseEditorProps) {
             Generated puzzle — {scrambled.steps} reverse move{scrambled.steps === 1 ? "" : "s"} applied
             {scrambled.steps < scrambled.requested ? " (ran out of new positions before reaching the requested count)" : ""}
           </h3>
+
+          <div className="editor-status">
+            {checkingBestKnown && <p>Checking for shortcuts…</p>}
+            {!checkingBestKnown && bestKnown === null && (
+              <p className="editor-hint">
+                Couldn't determine a best-known length within this quick check's budget — inconclusive, not
+                proof there's no shortcut.
+              </p>
+            )}
+            {!checkingBestKnown && bestKnown !== null && bestKnown.moves >= scrambled.steps && (
+              <p className="editor-ok">
+                ✓ No shortcut found — best known is {bestKnown.moves}
+                {bestKnown.proven ? "" : "+"} moves, matching your {scrambled.steps}-move scramble.
+              </p>
+            )}
+            {!checkingBestKnown && bestKnown !== null && bestKnown.moves < scrambled.steps && (
+              <p className="editor-warn">
+                ⚠ Shortcut found — this solves in as few as {bestKnown.moves}
+                {bestKnown.proven ? "" : "+"} moves, even though {scrambled.steps} reverse moves were applied to
+                build it. It's less scrambled than the step count suggests.
+              </p>
+            )}
+          </div>
           <div className="game-board editor-grid" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
             {scrambled.cells.map((row, r) =>
               row.map((cell, c) => (

@@ -1078,6 +1078,76 @@ export const worlds: World[] = [
 ],
 },
 
+
+
+  {
+    id: "world-021.1",
+    name: "Labyrinth",
+    levels: [
+      {
+        id: "world-021.1-1",
+        rows: 3,
+        cols: 5,
+        cells: [
+          [O(), D, D, E, AG()],
+          [E, E, E, E, E],
+          [G(), E, D, E, AO()],
+        ],
+      },
+      {
+        // Three colors funneling through the same single corridor row.
+        id: "world-021.1-2",
+        rows: 5,
+        cols: 5,
+        cells: [
+          [AO(), G(), AG(), E, E],
+          [O(), AG(), O(), E, E],
+          [E, AO(), G(), E, E],
+          [E, E, E, E, E],
+          [P(), E, E, E, AP()],
+        ],
+      },
+      {
+        id: "world-021.1-3",
+        rows: 7,
+        cols: 5,
+        cells: [
+          [AO(), G(), AG(), E, E],
+          [O(), AG(), O(), E, E],
+          [E, AO(), G(), E, E],
+          [E, E, E, E, E],
+          [P(), E, E, E, AP()],
+          [E, E, E, E, E],
+          [P(), E, E, E, AP()],
+        ],
+      },
+      {
+        id: "world-021.1-4",
+        rows: 5,
+        cols: 5,
+        cells: [
+          [E, AG(), E, AG(), E],
+          [G(), E, E, E, G()],
+          [E, E, AO(), E, E],
+          [O(), D, E, E, O()],
+          [E, E, E, D, E],
+        ],
+      },
+      {
+        id: "world-021.1-5",
+        rows: 4,
+        cols: 7,
+        cells: [
+          [O(), E, D, AG(), D, E, G()],
+          [E, E, E, E, E, E, E],
+          [E, AO(), E, E, E, AP(), E],
+          [G(), E, D, P(), D, E, O()],
+        ],
+      },
+    ],
+  },
+
+  
   {
     id: "world-018", 
     name: "Fountain",
@@ -1282,290 +1352,77 @@ export const worlds: World[] = [
 ],
 },
 
-
   {
-    id: "world-021",
-    name: "Labyrinth",
+    id: "world-021", 
+    name: "Thin Ice",
     levels: [
-      {
-        // Two colors, one shared single-cell corridor (col 2, row 1 only).
-        // Testing: does crossing order matter, or is it purely spatial?
-        id: "world-021-1",
-        rows: 3,
-        cols: 5,
-        cells: [
-          [O(), D, D, E, AG()],
-          [E, E, E, E, E],
-          [G(), E, D, E, AO()],
-        ],
-      },
-      {
-        // Three colors funneling through the same single corridor row.
-        id: "world-021-2",
-        rows: 4,
-        cols: 5,
-        cells: [
-          [O(), D, D, E, AP()],
-          [E, E, E, E, E],
-          [P(), E, D, E, AO()],
-          [G(), E, D, E, AG()],
-        ],
-      },
-      {
-        // Same corridor pattern as L2, one row taller: purple now has two
-        // movable geese (both must cross AND end up adjacent to each other).
-        id: "world-021-3",
-        rows: 5,
-        cols: 5,
-        cells: [
-          [O(), D, D, E, AP()],
-          [E, E, E, E, E],
-          [P(), E, D, E, AO()],
-          [P(), D, D, E, AG()],
-          [G(), D, D, E, E],
-        ],
-      },
-      {
-        // Orange has one anchor plus TWO movable geese on opposite sides —
-        // both must converge on it — while green shares the same corridor.
-        id: "world-021-4",
-        rows: 5,
-        cols: 6,
-        cells: [
-          [AO(), E, D, D, D, O()],
-          [E, E, E, E, E, E],
-          [G(), E, D, D, D, AG()],
-          [E, E, D, D, D, E],
-          [O(), D, D, D, D, E],
-        ],
-      },
-      {
-        // Largest: three colors funneling through one single-row corridor.
-        id: "world-021-5",
-        rows: 4,
-        cols: 6,
-        cells: [
-          [O(), D, D, D, E, AP()],
-          [E, E, E, E, E, E],
-          [P(), E, D, D, E, AO()],
-          [G(), E, D, D, E, AG()],
-        ],
-      },
-    ],
-  },
+{
+  id: "world-021-1",
+  rows: 6,
+  cols: 6,
+  cells: [
+      [O(), E, E, E, E, G()],
+      [G(), AP(), E, AP(), AP(), O()],
+      [E, D, E, E, P(), E],
+      [E, E, E, E, AG(), E],
+      [E, AG(), AO(), E, AO(), E],
+      [E, E, E, E, E, G()],
+  ],
+},
+{
+  id: "world-021-2",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [P(), E, E, G(), G(), AP()],
+      [E, D, O(), AG(), E, E],
+      [G(), AO(), E, E, E, E],
+      [E, E, P(), E, AG(), AP()],
+      [E, AO(), G(), E, E, G()],
+  ],
+},
+{
+  id: "world-021-3",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [E, D, AG(), P(), P(), AP()],
+      [E, E, E, E, E, G()],
+      [E, E, E, AG(), E, G()],
+      [E, AO(), E, AO(), E, AP()],
+      [E, E, E, E, E, O()],
+  ],
+},
+{
+  id: "world-021-4",
+  rows: 5,
+  cols: 6,
+  cells: [
+      [AG(), O(), E, AG(), D, E],
+      [AO(), G(), E, E, O(), E],
+      [E, E, AG(), D, D, E],
+      [G(), O(), E, E, E, G()],
+      [AP(), AO(), G(), D, P(), P()],
+  ],
+},
+{
+  id: "world-021-5",
+  rows: 6,
+  cols: 6,
+  cells: [
+      [P(), D, P(), D, D, E],
+      [E, P(), E, E, O(), E],
+      [E, E, E, AP(), D, E],
+      [G(), AO(), AP(), E, D, G()],
+      [E, E, AG(), E, E, E],
+      [E, D, P(), P(), AG(), O()],
+  ],
+},
 
-  {
-    id: "world-022",
-    name: "Estuary",
-    levels: [
-      {
-        // Two colors' anchors interleaved in the same small region rather
-        // than occupying separate zones — testing whether alternating
-        // between colors (instead of solving one fully, then the other)
-        // changes the character of the puzzle.
-        id: "world-022-1",
-        rows: 4,
-        cols: 4,
-        cells: [
-          [AO(), G(), AG(), E],
-          [O(), AG(), O(), E],
-          [E, AO(), G(), E],
-          [E, E, E, E],
-        ],
-      },
-      {
-        // Same proven interleaved cluster as L1, plus a separate simple
-        // purple pair with generous room to maneuver.
-        id: "world-022-2",
-        rows: 5,
-        cols: 5,
-        cells: [
-          [AO(), G(), AG(), E, E],
-          [O(), AG(), O(), E, E],
-          [E, AO(), G(), E, E],
-          [E, E, E, E, E],
-          [P(), E, E, E, AP()],
-        ],
-      },
-      {
-        // Same proven interleaved cluster as L1, plus two separate purple pairs.
-        id: "world-022-3",
-        rows: 6,
-        cols: 5,
-        cells: [
-          [AO(), G(), AG(), E, E],
-          [O(), AG(), O(), E, E],
-          [E, AO(), G(), E, E],
-          [E, E, E, E, E],
-          [P(), E, E, E, AP()],
-          [P(), E, E, E, AP()],
-        ],
-      },
-      {
-        // Same cluster, three separate purple pairs.
-        id: "world-022-4",
-        rows: 7,
-        cols: 5,
-        cells: [
-          [AO(), G(), AG(), E, E],
-          [O(), AG(), O(), E, E],
-          [E, AO(), G(), E, E],
-          [E, E, E, E, E],
-          [P(), E, E, E, AP()],
-          [E, E, E, E, E],
-          [P(), E, E, E, AP()],
-        ],
-      },
-      {
-        // Largest: the same cluster, wider board, four separate purple pairs.
-        id: "world-022-5",
-        rows: 7,
-        cols: 7,
-        cells: [
-          [AO(), G(), AG(), E, E, E, E],
-          [O(), AG(), O(), E, E, E, E],
-          [E, AO(), G(), E, E, E, E],
-          [E, E, E, E, E, E, E],
-          [P(), E, E, E, AP(), E, E],
-          [E, E, E, E, E, E, E],
-          [P(), E, E, E, AP(), P(), AP()],
-        ],
-      },
-    ],
-  },
+],
+},
 
-  {
-    id: "world-023",
-    name: "Mirage",
-    levels: [
-      {
-        // Looks mirror-symmetric left/right — either side seems equally
-        // valid for orange to settle — but the dead cell at (2,1) breaks
-        // the symmetry and only one side actually works cleanly.
-        id: "world-023-1",
-        rows: 3,
-        cols: 5,
-        cells: [
-          [E, AO(), E, AO(), E],
-          [O(), E, E, E, O()],
-          [E, D, E, E, E],
-        ],
-      },
-      {
-        id: "world-023-2",
-        rows: 4,
-        cols: 5,
-        cells: [
-          [E, AG(), E, AG(), E],
-          [G(), E, E, E, G()],
-          [E, D, E, E, E],
-          [E, D, E, E, E],
-        ],
-      },
-      {
-        id: "world-023-3",
-        rows: 4,
-        cols: 5,
-        cells: [
-          [E, AO(), AO(), E, E],
-          [O(), E, E, E, O()],
-          [P(), D, AP(), E, P()],
-          [E, E, E, D, E],
-        ],
-      },
-      {
-        id: "world-023-4",
-        rows: 5,
-        cols: 5,
-        cells: [
-          [E, AG(), E, AG(), E],
-          [G(), E, E, E, G()],
-          [E, E, AO(), E, E],
-          [O(), D, E, E, O()],
-          [E, E, E, D, E],
-        ],
-      },
-      {
-        id: "world-023-5",
-        rows: 5,
-        cols: 7,
-        cells: [
-          [E, E, D, AO(), D, E, E],
-          [O(), E, E, E, E, E, O()],
-          [E, D, G(), E, G(), D, E],
-          [E, E, E, AG(), E, E, E],
-          [E, E, D, E, D, E, E],
-        ],
-      },
-    ],
-  },
 
-  {
-    id: "world-024",
-    name: "Ridge",
-    levels: [
-      {
-        // Elongated board — everything so far has been roughly square.
-        id: "world-024-1",
-        rows: 3,
-        cols: 7,
-        cells: [
-          [O(), E, E, AG(), E, E, O()],
-          [E, E, E, E, E, E, E],
-          [G(), E, E, AO(), E, E, G()],
-        ],
-      },
-      {
-        id: "world-024-2",
-        rows: 7,
-        cols: 3,
-        cells: [
-          [O(), E, G()],
-          [E, E, E],
-          [E, AO(), E],
-          [P(), E, P()],
-          [E, AG(), E],
-          [E, E, E],
-          [G(), E, O()],
-        ],
-      },
-      {
-        id: "world-024-3",
-        rows: 3,
-        cols: 7,
-        cells: [
-          [O(), E, E, AP(), E, E, G()],
-          [E, E, E, E, E, E, E],
-          [G(), E, E, AO(), E, E, O()],
-        ],
-      },
-      {
-        id: "world-024-4",
-        rows: 7,
-        cols: 4,
-        cells: [
-          [O(), E, E, G()],
-          [E, D, D, E],
-          [E, AP(), P(), E],
-          [P(), E, E, AP()],
-          [E, AG(), AO(), E],
-          [E, D, D, E],
-          [G(), E, E, O()],
-        ],
-      },
-      {
-        id: "world-024-5",
-        rows: 4,
-        cols: 7,
-        cells: [
-          [O(), E, D, AG(), D, E, G()],
-          [E, E, E, E, E, E, E],
-          [E, AO(), E, E, E, AP(), E],
-          [G(), E, D, P(), D, E, O()],
-        ],
-      },
-    ],
-  },
 
 ];
 
