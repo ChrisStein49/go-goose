@@ -8,16 +8,19 @@ import { LevelEditor } from "./components/LevelEditor";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
 import { LevelStatusBar } from "./components/LevelStatusBar";
+import { ReverseEditor } from "./components/ReverseEditor";
 import { allLevels, levelDisplayName, worldNameForLevel } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
 
-type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits" | "editor";
+type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits" | "editor" | "reverse-editor";
 
 function App() {
-  const [screen, setScreen] = useState<Screen>(() =>
-    window.location.hash === "#editor" ? "editor" : "menu",
-  );
+  const [screen, setScreen] = useState<Screen>(() => {
+    if (window.location.hash === "#editor") return "editor";
+    if (window.location.hash === "#reverse-editor") return "reverse-editor";
+    return "menu";
+  });
   const [completed, setCompleted] = useState<Set<string>>(() => loadCompletedLevels());
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
@@ -78,6 +81,14 @@ function App() {
       {screen === "credits" && <Credits onBack={() => setScreen("menu")} />}
       {screen === "editor" && (
         <LevelEditor
+          onBack={() => {
+            window.location.hash = "";
+            setScreen("menu");
+          }}
+        />
+      )}
+      {screen === "reverse-editor" && (
+        <ReverseEditor
           onBack={() => {
             window.location.hash = "";
             setScreen("menu");

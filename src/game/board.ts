@@ -1,6 +1,6 @@
 import type { Board, Cell, Direction, Level } from "./types";
 
-const DELTA: Record<Direction, [number, number]> = {
+export const DELTA: Record<Direction, [number, number]> = {
   up: [-1, 0],
   down: [1, 0],
   left: [0, -1],
@@ -11,7 +11,7 @@ export function boardFromLevel(level: Level): Board {
   return level.cells.map((row) => row.map((cell) => ({ ...cell })));
 }
 
-function inBounds(board: Board, r: number, c: number): boolean {
+export function inBounds(board: Board, r: number, c: number): boolean {
   return r >= 0 && r < board.length && c >= 0 && c < board[0].length;
 }
 

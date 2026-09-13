@@ -370,6 +370,35 @@ button:not(:disabled):hover {
   padding: 8px 14px;
 }
 
+.editor-scramble-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.editor-scramble-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #2c2a3a;
+}
+
+.editor-scramble-controls input {
+  width: 72px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #b3adc9;
+  font: inherit;
+}
+
+.editor-generated {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #d8d4e8;
+}
+
 .editor-anchor-toggle {
   display: flex;
   align-items: center;
