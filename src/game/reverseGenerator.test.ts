@@ -22,15 +22,42 @@ describe("findReverseChains", () => {
     expect(chains[0].cells).toEqual([[0, 1]]);
   });
 
-  it("finds a two-goose chain blocked together", () => {
+  it("finds a two-goose chain blocked together, plus its back-anchored sub-chain", () => {
     const b = board([[E, g("blue"), g("blue"), D]]);
     const chains = findReverseChains(b);
-    expect(chains).toHaveLength(1);
-    expect(chains[0].cells).toEqual([
-      [0, 1],
-      [0, 2],
-    ]);
-    expect(chains[0].maxShift).toBe(1);
+    // The full 2-cell run (blocked by the dead cell) is one valid candidate,
+    // but so is just the back cell alone: it could equally have arrived by
+    // sliding right into contact with the other (already-resting) goose.
+    expect(chains).toHaveLength(2);
+    expect(chains).toContainEqual({ cells: [[0, 1]], blockedDirection: "right", maxShift: 1 });
+    expect(chains).toContainEqual({
+      cells: [
+        [0, 1],
+        [0, 2],
+      ],
+      blockedDirection: "right",
+      maxShift: 1,
+    });
+  });
+
+  it("finds a back-anchored sub-chain even when the full run isn't blocked by anything but another goose", () => {
+    // Two different-colored geese sitting adjacent with open space on both
+    // sides: neither could have arrived as one combined push (it isn't
+    // blocked at either end), but each one individually could have slid in
+    // and stopped against the other.
+    const b = board([[E, g("blue"), g("red"), E]]);
+    const chains = findReverseChains(b);
+    expect(chains).toContainEqual({ cells: [[0, 1]], blockedDirection: "right", maxShift: 1 });
+    expect(chains).toContainEqual({ cells: [[0, 2]], blockedDirection: "left", maxShift: 1 });
+    // The full 2-cell run is blocked at neither end, so it must NOT appear.
+    expect(chains).not.toContainEqual(
+      expect.objectContaining({
+        cells: [
+          [0, 1],
+          [0, 2],
+        ],
+      }),
+    );
   });
 
   it("finds nothing when there is no empty room to shift back into", () => {

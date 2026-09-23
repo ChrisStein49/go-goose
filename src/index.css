@@ -1,6 +1,15 @@
 :root {
   color-scheme: light;
-  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-family: "Montserrat", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /* ganzgraz corporate identity */
+  --color-primary: #4e2996; /* dark purple */
+  --color-primary-dark: #3a1f70;
+  --color-secondary-flieder: #cdb9ee;
+  --color-secondary-pastel-orange: #f8c99d;
+  --color-accent: #ff8900; /* orange */
+  --font-headline: "League Spartan", "Montserrat", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, "Segoe UI", Roboto, sans-serif;
 }
 
 * {
@@ -10,5 +19,18 @@
 body {
   margin: 0;
   min-height: 100svh;
-  background: #b9b3e6;
+  background: var(--color-secondary-flieder);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-headline);
+  font-weight: 700;
+}
+
+blockquote {
+  font-family: var(--font-body);
+  font-style: italic;
+  margin: 0;
 }

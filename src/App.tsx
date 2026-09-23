@@ -9,19 +9,24 @@ import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
 import { LevelStatusBar } from "./components/LevelStatusBar";
 import { ReverseEditor } from "./components/ReverseEditor";
-import { allLevels, levelDisplayName, worldNameForLevel } from "./game/levels";
+import { loadDailyCompleted, saveDailyCompleted } from "./game/dailyProgress";
+import { allLevels, levelDisplayName, worldIdForLevel, worldNameForLevel } from "./game/levels";
 import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
 import type { Level } from "./game/types";
+import { useLanguage } from "./i18n/LanguageContext";
+import { localizedWorldName } from "./i18n/worldNames";
 
 type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits" | "editor" | "reverse-editor";
 
 function App() {
+  const { language, setLanguage, t } = useLanguage();
   const [screen, setScreen] = useState<Screen>(() => {
     if (window.location.hash === "#editor") return "editor";
     if (window.location.hash === "#reverse-editor") return "reverse-editor";
     return "menu";
   });
   const [completed, setCompleted] = useState<Set<string>>(() => loadCompletedLevels());
+  const [dailyCompleted, setDailyCompleted] = useState(() => loadDailyCompleted());
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);
@@ -43,6 +48,11 @@ function App() {
     }
   }
 
+  function handleDailyComplete() {
+    setDailyCompleted(true);
+    saveDailyCompleted(true);
+  }
+
   function goToNextLevel() {
     if (!currentLevel) return;
     const index = allLevels.findIndex((l) => l.id === currentLevel.id);
@@ -51,11 +61,36 @@ function App() {
     else setScreen("worlds");
   }
 
+  const backButton =
+    screen === "level"
+      ? { label: t.mapBack, onClick: () => setScreen("worlds") }
+      : screen === "worlds" || screen === "daily" || screen === "how-to-play" || screen === "credits"
+        ? { label: t.menuBack, onClick: () => setScreen("menu") }
+        : null;
+
   return (
     <div className="app">
+      <div className="top-nav">
+        {backButton && <button onClick={backButton.onClick}>{backButton.label}</button>}
+        <div className="language-switcher">
+          <button
+            className={language === "en" ? "language-active" : ""}
+            onClick={() => setLanguage("en")}
+          >
+            EN
+          </button>
+          <button
+            className={language === "de" ? "language-active" : ""}
+            onClick={() => setLanguage("de")}
+          >
+            DE
+          </button>
+        </div>
+      </div>
       <header className="app-header">
-        <h1>Go Goose</h1>
-        <p className="subtitle">Push the geese so every color forms one connected flock.</p>
+        <img src="/goose-orange.svg" alt="" className="app-logo" />
+        <h1>{t.appTitle}</h1>
+        <p className="subtitle">{t.appSubtitle}</p>
       </header>
 
       {screen === "menu" && (
@@ -64,21 +99,15 @@ function App() {
           onDailyChallenge={() => setScreen("daily")}
           onHowToPlay={() => setScreen("how-to-play")}
           onCredits={() => setScreen("credits")}
+          dailyCompleted={dailyCompleted}
         />
       )}
 
-      {screen === "worlds" && (
-        <>
-          <div className="level-bar">
-            <button onClick={() => setScreen("menu")}>← Menu</button>
-          </div>
-          <LevelSelect completed={completed} onSelectLevel={openLevel} />
-        </>
-      )}
+      {screen === "worlds" && <LevelSelect completed={completed} onSelectLevel={openLevel} />}
 
-      {screen === "daily" && <DailyChallenge onBack={() => setScreen("menu")} />}
-      {screen === "how-to-play" && <HowToPlay onBack={() => setScreen("menu")} />}
-      {screen === "credits" && <Credits onBack={() => setScreen("menu")} />}
+      {screen === "daily" && <DailyChallenge onComplete={handleDailyComplete} />}
+      {screen === "how-to-play" && <HowToPlay />}
+      {screen === "credits" && <Credits />}
       {screen === "editor" && (
         <LevelEditor
           onBack={() => {
@@ -99,15 +128,19 @@ function App() {
       {screen === "level" && currentLevel && (
         <>
           <div className="level-bar">
-            <button onClick={() => setScreen("worlds")}>← Map</button>
             <span className="level-name">
-              <span className="world-name">{worldNameForLevel(currentLevel.id)}</span>
-              {" · "}
+              <span className="world-name">
+                {localizedWorldName(
+                  worldIdForLevel(currentLevel.id) ?? "",
+                  worldNameForLevel(currentLevel.id) ?? "",
+                  language,
+                )}
+              </span>
+              {t.levelBarSeparator}
               {levelDisplayName(currentLevel.id)}
             </span>
+            <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} complete={complete} />
           </div>
-
-          <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} complete={complete} />
 
           <GameBoard
             key={currentLevel.id}
@@ -118,11 +151,9 @@ function App() {
 
           {complete && (
             <button className="next-level-button" onClick={goToNextLevel}>
-              Next Level →
+              {t.nextLevel}
             </button>
           )}
-
-          <p className="hint">Drag a goose, or tap it and use arrow keys, to push it.</p>
         </>
       )}
     </div>

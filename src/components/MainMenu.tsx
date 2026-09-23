@@ -1,24 +1,34 @@
+import { useLanguage } from "../i18n/LanguageContext";
+
 interface MainMenuProps {
   onPlay: () => void;
   onDailyChallenge: () => void;
   onHowToPlay: () => void;
   onCredits: () => void;
+  dailyCompleted: boolean;
 }
 
-export function MainMenu({ onPlay, onDailyChallenge, onHowToPlay, onCredits }: MainMenuProps) {
+export function MainMenu({ onPlay, onDailyChallenge, onHowToPlay, onCredits, dailyCompleted }: MainMenuProps) {
+  const { t } = useLanguage();
+
   return (
     <nav className="main-menu">
       <button className="menu-button" onClick={onPlay}>
-        Play
+        {t.play}
       </button>
-      <button className="menu-button" onClick={onDailyChallenge}>
-        Today's Challenge
+      <button className="menu-button daily-menu-button" onClick={onDailyChallenge}>
+        {t.dailyChallenge}
+        {dailyCompleted && (
+          <span className="daily-winner-badge" title={t.dailyChallengeCompletedTitle}>
+            🏆
+          </span>
+        )}
       </button>
       <button className="menu-button" onClick={onHowToPlay}>
-        How to Play
+        {t.howToPlay}
       </button>
       <button className="menu-button" onClick={onCredits}>
-        Credits
+        {t.credits}
       </button>
     </nav>
   );

@@ -152,6 +152,96 @@ export function disconnectionScore(board: Board): number {
   return score;
 }
 
+export interface ScatterScore {
+  /** Sum of every color's score. */
+  total: number;
+  /** Each color's sum of pairwise Manhattan distances between its cells (geese and anchors). */
+  perColor: Record<string, number>;
+}
+
+/**
+ * A cheap, obstacle-blind proxy for how spread out each color's pieces are:
+ * the sum of pairwise Manhattan distances between all of a color's cells
+ * (geese and anchors both, matching how connectivity is judged elsewhere).
+ * Unlike `disconnectionScore` — which only counts how many separate groups a
+ * color is split into — this also captures HOW FAR apart those groups are,
+ * so two same-color geese sitting just out of reach of each other score much
+ * lower than two sitting in opposite corners, even though both count as "1
+ * disconnected group." It ignores dead cells and anchors blocking the actual
+ * route, so it's a fast pre-filter for candidate puzzles, not a substitute
+ * for an actual move-count check.
+ */
+export function scatterScore(board: Board): ScatterScore {
+  const groups = findGooseGroups(board);
+  const perColor: Record<string, number> = {};
+  let total = 0;
+
+  for (const [color, cells] of groups) {
+    let sum = 0;
+    for (let i = 0; i < cells.length; i++) {
+      for (let j = i + 1; j < cells.length; j++) {
+        const [r1, c1] = cells[i];
+        const [r2, c2] = cells[j];
+        sum += Math.abs(r1 - r2) + Math.abs(c1 - c2);
+      }
+    }
+    perColor[color] = sum;
+    total += sum;
+  }
+
+  return { total, perColor };
+}
+
+function averagePairwiseDistance(cells: [number, number][]): number {
+  if (cells.length < 2) return 0;
+  let sum = 0;
+  let pairs = 0;
+  for (let i = 0; i < cells.length; i++) {
+    for (let j = i + 1; j < cells.length; j++) {
+      sum += Math.abs(cells[i][0] - cells[j][0]) + Math.abs(cells[i][1] - cells[j][1]);
+      pairs++;
+    }
+  }
+  return sum / pairs;
+}
+
+export interface RelativeScatterScore {
+  /** Average pairwise Manhattan distance between every pair of non-dead cells on this board — a board-intrinsic baseline for how far apart two cells typically are here. */
+  boardBaseline: number;
+  /** Each color's own average pairwise distance divided by `boardBaseline`. Above 1 means that color is spread out more than a random/typical placement on this board would be; below 1 means it's more clustered than that. */
+  perColor: Record<string, number>;
+}
+
+/**
+ * `scatterScore`'s raw sum conflates two very different situations: pieces
+ * that are deliberately spread across a spacious board, and pieces that
+ * merely LOOK spread out because the board is packed almost solid and there
+ * was nowhere else to put them (e.g. a level with only one empty cell out of
+ * twenty will force a high raw scatter regardless of design intent). This
+ * divides each color's average pairwise distance by the board's OWN average
+ * pairwise distance (measured across all its non-dead cells), so the result
+ * says "more/less scattered than a typical placement on THIS board," not
+ * just "more/less scattered than some other board." Still obstacle-blind —
+ * a cheap pre-filter, not a substitute for an actual move-count check.
+ */
+export function relativeScatterScore(board: Board): RelativeScatterScore {
+  const nonDeadCells: [number, number][] = [];
+  for (let r = 0; r < board.length; r++) {
+    for (let c = 0; c < board[r].length; c++) {
+      if (board[r][c].kind !== "dead") nonDeadCells.push([r, c]);
+    }
+  }
+  const boardBaseline = averagePairwiseDistance(nonDeadCells);
+
+  const groups = findGooseGroups(board);
+  const perColor: Record<string, number> = {};
+  for (const [color, cells] of groups) {
+    perColor[color] = boardBaseline > 0 ? averagePairwiseDistance(cells) / boardBaseline : 0;
+  }
+
+  return { boardBaseline, perColor };
+}
+
 /** Cells holding a movable goose — deliberately excludes anchors, which can never be pushed. */
 export function allGooseCells(board: Board): [number, number][] {
   const cells: [number, number][] = [];

@@ -13,10 +13,25 @@ export interface ReverseChain {
 }
 
 /**
- * Finds every maximal run of contiguous movable geese that is currently
- * blocked (by the edge, a dead cell, or an anchor) in some direction — each
- * one is a candidate "this chain could have just arrived here via a forward
- * push in `blockedDirection`", and can be undone by shifting it backward.
+ * Finds every reversible chain of contiguous movable geese in the board —
+ * each one is a candidate "this chain could have just arrived here via a
+ * forward push in `blockedDirection`", and can be undone by shifting it
+ * backward.
+ *
+ * A forward push always sweeps up every contiguous goose ahead of the pushed
+ * one (color-blind), so a maximal contiguous run blocked by the edge, a dead
+ * cell, or an anchor at its front is one candidate — but it isn't the only
+ * one. That same run could equally have been assembled by a *shorter* chain
+ * sliding forward and coming to rest against geese that were already sitting
+ * there (which, being contiguous, is indistinguishable from a single bigger
+ * chain in the resulting board). So for every maximal run, every back-anchored
+ * sub-chain — the last K cells counting from the end farthest from the
+ * blocker — is also a valid reversible unit: pushing forward, it would have
+ * stopped the instant it touched the (stationary) remainder of the run,
+ * exactly as if that remainder were the blocker. Only the *full* run (K =
+ * length) additionally requires the front to be blocked by something other
+ * than a goose, since a full run that could still slide further in
+ * `blockedDirection` couldn't have legitimately come to rest there.
  */
 export function findReverseChains(board: Board): ReverseChain[] {
   const chains: ReverseChain[] = [];
@@ -42,7 +57,6 @@ export function findReverseChains(board: Board): ReverseChain[] {
           !inBounds(board, blockerR, blockerC) ||
           board[blockerR][blockerC].kind === "dead" ||
           board[blockerR][blockerC].kind === "anchor";
-        if (!isBlocked) continue;
 
         const frontKey = `${fr},${fc}`;
         if (seenFronts.has(frontKey)) continue; // already recorded this run for this direction
@@ -70,8 +84,16 @@ export function findReverseChains(board: Board): ReverseChain[] {
           sr -= dr;
           sc -= dc;
         }
+        if (maxShift === 0) continue;
 
-        if (maxShift > 0) chains.push({ cells, blockedDirection, maxShift });
+        // Sub-chains shorter than the full run are always valid reversible
+        // units (their "blocker" is simply the next cell of the same run,
+        // which is provably a goose). The full run is only valid when it's
+        // genuinely blocked by something other than another goose.
+        const maxLength = isBlocked ? cells.length : cells.length - 1;
+        for (let length = 1; length <= maxLength; length++) {
+          chains.push({ cells: cells.slice(0, length), blockedDirection, maxShift });
+        }
       }
     }
   }
@@ -131,6 +153,18 @@ export interface ScrambleResult {
  * one's net effect (e.g. shift left then shift back right), which a
  * same-chain-only guard would miss. Tracking visited states directly is
  * what actually prevents degenerate back-and-forth scrambles.
+ *
+ * Tries one random shift per candidate chain first (in shuffled order) — the
+ * cheap, common-case path. Only if that whole pass fails to find anything
+ * fresh does it fall back to exhaustively trying every remaining shift
+ * distance of every chain before finally giving up: sampling just one random
+ * distance per chain would risk declaring a dead end (and stopping short of
+ * the requested step count) even when a different, untried distance for
+ * that same chain would have reached fresh territory. Falling back only on
+ * failure — rather than always shuffling every shift up front — keeps the
+ * normal-case move selection exactly as before, so this only ever rescues
+ * steps that would otherwise have been cut short, never changes ones that
+ * were already succeeding.
  */
 export function scramble(board: Board, steps: number, seed = 1): ScrambleResult {
   const random = mulberry32(seed);
@@ -140,26 +174,40 @@ export function scramble(board: Board, steps: number, seed = 1): ScrambleResult 
 
   for (let i = 0; i < steps; i++) {
     const candidates = findReverseChains(current);
-    // Shuffle so we try chains in random order, taking the first that leads
-    // to an unvisited state (with a random shift distance for that chain).
+    // Shuffle so we try chains in random order.
     for (let j = candidates.length - 1; j > 0; j--) {
       const k = Math.floor(random() * (j + 1));
       [candidates[j], candidates[k]] = [candidates[k], candidates[j]];
     }
 
-    let madeProgress = false;
+    let next: { board: Board; key: string } | null = null;
+
     for (const chain of candidates) {
       const shift = 1 + Math.floor(random() * chain.maxShift);
       const candidateBoard = applyReverseMove(current, chain, shift);
       const key = serializeBoard(candidateBoard);
       if (visited.has(key)) continue;
-      current = candidateBoard;
-      visited.add(key);
-      applied++;
-      madeProgress = true;
+      next = { board: candidateBoard, key };
       break;
     }
-    if (!madeProgress) break; // every candidate would revisit a seen state
+
+    if (!next) {
+      for (const chain of candidates) {
+        for (let shift = 1; shift <= chain.maxShift; shift++) {
+          const candidateBoard = applyReverseMove(current, chain, shift);
+          const key = serializeBoard(candidateBoard);
+          if (visited.has(key)) continue;
+          next = { board: candidateBoard, key };
+          break;
+        }
+        if (next) break;
+      }
+    }
+
+    if (!next) break; // every candidate's every shift distance would revisit a seen state
+    current = next.board;
+    visited.add(next.key);
+    applied++;
   }
 
   return { board: current, steps: applied };

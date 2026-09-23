@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { pushGoose, isLevelComplete, getIncompleteColors, allGooseCells } from "./board";
+import { pushGoose, isLevelComplete, getIncompleteColors, allGooseCells, scatterScore, relativeScatterScore } from "./board";
 import type { Board } from "./types";
 
 const E = { kind: "empty" } as const;
@@ -112,5 +112,73 @@ describe("anchors (fixed geese)", () => {
   it("is excluded from the list of pushable geese", () => {
     const b = board([[g("blue"), E, a("blue")]]);
     expect(allGooseCells(b)).toEqual([[0, 0]]);
+  });
+});
+
+describe("scatterScore", () => {
+  it("is 0 for a single-cell color", () => {
+    const b = board([[g("blue"), E, E]]);
+    expect(scatterScore(b).perColor.blue).toBe(0);
+  });
+
+  it("sums pairwise Manhattan distance for a color with more than one cell", () => {
+    const b = board([
+      [g("blue"), E, E],
+      [E, E, E],
+      [E, E, g("blue")],
+    ]);
+    // (0,0) to (2,2): |0-2| + |0-2| = 4
+    expect(scatterScore(b).perColor.blue).toBe(4);
+  });
+
+  it("grows with distance apart, even when disconnectionScore would be identical", () => {
+    const near = board([[g("blue"), E, g("blue")]]);
+    const far = board([[g("blue"), E, E, E, E, E, E, g("blue")]]);
+    expect(scatterScore(far).perColor.blue).toBeGreaterThan(scatterScore(near).perColor.blue);
+  });
+
+  it("counts anchors alongside geese, matching how connectivity is judged", () => {
+    const b = board([[g("blue"), E, a("blue")]]);
+    expect(scatterScore(b).perColor.blue).toBe(2);
+  });
+
+  it("scores each color independently and sums them into a total", () => {
+    const b = board([[g("blue"), g("pink"), E, g("blue"), E, g("pink")]]);
+    const result = scatterScore(b);
+    // blue at cols 0,3 -> 3; pink at cols 1,5 -> 4
+    expect(result.perColor).toEqual({ blue: 3, pink: 4 });
+    expect(result.total).toBe(7);
+  });
+});
+
+describe("relativeScatterScore", () => {
+  it("scores a clustered color below 1 and a spread-out color above 1 on the same board", () => {
+    const b = board([
+      [g("blue"), g("blue"), E, g("pink")],
+      [E, E, E, E],
+      [g("pink"), E, E, E],
+    ]);
+    const result = relativeScatterScore(b);
+    expect(result.perColor.blue).toBeLessThan(1); // adjacent pair
+    expect(result.perColor.pink).toBeGreaterThan(1); // opposite corners — the board's maximum possible distance
+  });
+
+  it("stays close to the board's own baseline for a color that fills most of a packed board, unlike the raw scatterScore which spikes", () => {
+    // Only one empty cell on this board — any color occupying most of it is
+    // "scattered" merely because there's nowhere else to go, not because of
+    // deliberate design.
+    const packed = board([
+      [g("blue"), g("blue"), g("blue")],
+      [g("blue"), D, g("blue")],
+      [g("blue"), g("blue"), E],
+    ]);
+    expect(relativeScatterScore(packed).perColor.blue).toBeCloseTo(1, 1);
+  });
+
+  it("excludes dead cells from the board baseline", () => {
+    const b = board([[g("blue"), D, D, D, g("blue")]]);
+    // Only the two blue cells are non-dead, so the baseline equals their own
+    // distance and the ratio is exactly 1.
+    expect(relativeScatterScore(b).perColor.blue).toBeCloseTo(1, 5);
   });
 });

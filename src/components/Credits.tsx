@@ -1,15 +1,14 @@
-interface CreditsProps {
-  onBack: () => void;
-}
+import { useLanguage } from "../i18n/LanguageContext";
 
-export function Credits({ onBack }: CreditsProps) {
+export function Credits() {
+  const { t } = useLanguage();
+
   return (
     <div className="credits">
-      <button onClick={onBack}>← Menu</button>
       <section>
-        <h2>Credits</h2>
-        <p>Go Goose was designed and built by Christoph.</p>
-        <p className="credits-note">Built with Claude Code.</p>
+        <h2>{t.creditsTitle}</h2>
+        <p>{t.creditsBody}</p>
+        <p className="credits-note">{t.creditsNote}</p>
       </section>
     </div>
   );

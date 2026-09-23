@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { boardFromLevel, getIncompleteColors, isLevelComplete, pushGoose } from "../game/board";
 import type { Board, Direction, Level } from "../game/types";
+import { useLanguage } from "../i18n/LanguageContext";
 import { GooseIcon } from "./GooseIcon";
 
 const SWIPE_THRESHOLD = 24;
@@ -12,6 +13,7 @@ interface GameBoardProps {
 }
 
 export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBoardProps) {
+  const { t } = useLanguage();
   const [board, setBoard] = useState<Board>(() => boardFromLevel(level));
   const [history, setHistory] = useState<Board[]>([]);
   const [selected, setSelected] = useState<[number, number] | null>(null);
@@ -154,10 +156,10 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBo
         )}
       </div>
       <div className="board-controls">
-        <button onClick={undo} disabled={history.length === 0}>
-          Undo
+        <button onClick={undo} disabled={complete || history.length === 0}>
+          {t.undo}
         </button>
-        <button onClick={reset}>Reset</button>
+        <button onClick={reset}>{t.reset}</button>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import { allLevels, worlds } from "../game/levels";
 import type { Level } from "../game/types";
+import { useLanguage } from "../i18n/LanguageContext";
+import { localizedWorldName } from "../i18n/worldNames";
 
 interface LevelSelectProps {
   completed: Set<string>;
@@ -7,6 +9,7 @@ interface LevelSelectProps {
 }
 
 export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
+  const { language } = useLanguage();
   const indexOf = new Map(allLevels.map((level, i) => [level.id, i]));
 
   function isUnlocked(level: Level): boolean {
@@ -19,7 +22,7 @@ export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
     <div className="level-select">
       {worlds.map((world) => (
         <div className="world-section" key={world.id}>
-          <h2>{world.name}</h2>
+          <h2>{localizedWorldName(world.id, world.name, language)}</h2>
           <div className="level-grid">
             {world.levels.map((level, i) => {
               const unlocked = isUnlocked(level);

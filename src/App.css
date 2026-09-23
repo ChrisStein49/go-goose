@@ -6,6 +6,37 @@
   color: #2c2a3a;
 }
 
+.app-logo {
+  width: 72px;
+  height: auto;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  min-height: 36px;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.language-switcher button {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #b3adc9;
+}
+
+.language-switcher button.language-active {
+  background: var(--color-primary);
+}
+
 .app-header h1 {
   margin: 0 0 4px;
   font-size: 40px;
@@ -21,9 +52,10 @@
 
 .level-bar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 16px;
   margin-bottom: 8px;
 }
 
@@ -53,8 +85,13 @@
   color: #4a4560;
 }
 
+.moves-count {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .complete-badge.new-record {
-  background: #c9971e;
+  background: var(--color-accent);
 }
 
 .complete-badge {
@@ -71,7 +108,7 @@ button {
   padding: 8px 16px;
   border-radius: 8px;
   border: none;
-  background: #6b5fb3;
+  background: var(--color-primary);
   color: white;
   cursor: pointer;
 }
@@ -82,7 +119,7 @@ button:disabled {
 }
 
 button:not(:disabled):hover {
-  background: #5a4fa0;
+  background: var(--color-primary-dark);
 }
 
 .game-board-wrapper {
@@ -142,7 +179,7 @@ button:not(:disabled):hover {
 }
 
 .cell-selected {
-  box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 5px #6b5fb3;
+  box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 5px var(--color-primary);
 }
 
 .cell-done .goose-icon {
@@ -160,14 +197,9 @@ button:not(:disabled):hover {
   gap: 12px;
 }
 
-.hint {
-  margin-top: 20px;
-  font-size: 13px;
-  color: #4a4560;
-}
-
 .next-level-button {
-  margin-top: 16px;
+  display: block;
+  margin: 16px auto 0;
   background: #3fae5a;
 }
 
@@ -199,7 +231,7 @@ button:not(:disabled):hover {
   width: 52px;
   height: 52px;
   border-radius: 10px;
-  background: #6b5fb3;
+  background: var(--color-primary);
   font-size: 18px;
   font-weight: 600;
 }
@@ -227,9 +259,24 @@ button:not(:disabled):hover {
   border-radius: 10px;
 }
 
+.daily-menu-button {
+  position: relative;
+}
+
+.daily-winner-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 18px;
+  line-height: 1;
+  background: var(--color-accent);
+  border-radius: 999px;
+  padding: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
 .how-to-play,
-.credits,
-.daily-challenge {
+.credits {
   text-align: left;
 }
 
@@ -270,7 +317,7 @@ button:not(:disabled):hover {
 
 .how-to-arrow {
   font-size: 22px;
-  color: #6b5fb3;
+  color: var(--color-primary);
 }
 
 .mini-board-figure {
@@ -476,6 +523,89 @@ button:not(:disabled):hover {
   resize: vertical;
   margin-bottom: 8px;
   box-sizing: border-box;
+}
+
+.manual-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.manual-steps {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c2a3a;
+}
+
+.cell-reverse-source {
+  box-shadow: inset 0 0 0 3px #e0a30e;
+}
+
+.cell-reverse-dest {
+  outline: 2px dashed #2f8a49;
+  outline-offset: -4px;
+}
+
+.reverse-candidate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 280px;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 6px;
+  border: 1px solid #d8d4e8;
+  border-radius: 8px;
+}
+
+.reverse-candidate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.reverse-candidate:hover {
+  background: #fdf1e4;
+}
+
+.reverse-candidate-cells {
+  display: flex;
+  gap: 2px;
+  min-width: 60px;
+}
+
+.reverse-candidate-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex: none;
+}
+
+.reverse-candidate-goose {
+  width: 100%;
+  height: 100%;
+}
+
+.reverse-candidate-arrow {
+  font-size: 16px;
+  width: 18px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.reverse-candidate-shifts {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.reverse-candidate-shifts button {
+  padding: 4px 9px;
+  font-size: 13px;
 }
 
 @media (max-width: 480px) {
