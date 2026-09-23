@@ -10,9 +10,11 @@ interface GameBoardProps {
   level: Level;
   onMoveCountChange?: (count: number) => void;
   onCompleteChange?: (complete: boolean) => void;
+  onNext?: () => void;
+  nextLabel?: string;
 }
 
-export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBoardProps) {
+export function GameBoard({ level, onMoveCountChange, onCompleteChange, onNext, nextLabel }: GameBoardProps) {
   const { t } = useLanguage();
   const [board, setBoard] = useState<Board>(() => boardFromLevel(level));
   const [history, setHistory] = useState<Board[]>([]);
@@ -156,10 +158,21 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange }: GameBo
         )}
       </div>
       <div className="board-controls">
-        <button onClick={undo} disabled={complete || history.length === 0}>
-          {t.undo}
-        </button>
-        <button onClick={reset}>{t.reset}</button>
+        {complete && onNext ? (
+          <>
+            <button onClick={reset}>{t.reset}</button>
+            <button className="next-level-button" onClick={onNext}>
+              {nextLabel}
+            </button>
+          </>
+        ) : (
+          <>
+            <button onClick={undo} disabled={complete || history.length === 0}>
+              {t.undo}
+            </button>
+            <button onClick={reset}>{t.reset}</button>
+          </>
+        )}
       </div>
     </div>
   );

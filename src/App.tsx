@@ -7,7 +7,7 @@ import { HowToPlay } from "./components/HowToPlay";
 import { LevelEditor } from "./components/LevelEditor";
 import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
-import { LevelStatusBar } from "./components/LevelStatusBar";
+import { LevelCompleteBadge, LevelStatusBar } from "./components/LevelStatusBar";
 import { ReverseEditor } from "./components/ReverseEditor";
 import { loadDailyCompleted, saveDailyCompleted } from "./game/dailyProgress";
 import { allLevels, levelDisplayName, worldIdForLevel, worldNameForLevel } from "./game/levels";
@@ -71,7 +71,11 @@ function App() {
   return (
     <div className="app">
       <div className="top-nav">
-        {backButton && <button onClick={backButton.onClick}>{backButton.label}</button>}
+        {backButton && (
+          <button className="back-button" onClick={backButton.onClick}>
+            {backButton.label}
+          </button>
+        )}
         <div className="language-switcher">
           <button
             className={language === "en" ? "language-active" : ""}
@@ -139,21 +143,19 @@ function App() {
               {t.levelBarSeparator}
               {levelDisplayName(currentLevel.id)}
             </span>
-            <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} complete={complete} />
+            <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} />
           </div>
+
+          {complete && <LevelCompleteBadge levelId={currentLevel.id} moveCount={moveCount} />}
 
           <GameBoard
             key={currentLevel.id}
             level={currentLevel}
             onMoveCountChange={setMoveCount}
             onCompleteChange={handleCompleteChange}
+            onNext={goToNextLevel}
+            nextLabel={t.nextLevel}
           />
-
-          {complete && (
-            <button className="next-level-button" onClick={goToNextLevel}>
-              {t.nextLevel}
-            </button>
-          )}
         </>
       )}
     </div>

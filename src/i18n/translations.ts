@@ -22,7 +22,7 @@ export interface Translations {
   dailyCompleteBody: string;
   playAgain: string;
   nextPuzzle: string;
-  puzzleOf: (index: number, total: number) => string;
+  dailyPuzzleOf: (index: number, total: number) => string;
   dailySolvedAll: (count: number) => string;
 
   undo: string;
@@ -46,11 +46,8 @@ export interface Translations {
   movesLabel: string;
   bestKnownLabel: string;
   levelCompletePlain: string;
-  /** `best` is a pre-formatted score (already includes a trailing "+" for unproven bounds). */
-  newRecord: (best: string, moves: number) => string;
+  newRecord: string;
   matchedBest: string;
-  /** `best` is a pre-formatted score (already includes a trailing "+" for unproven bounds). */
-  completeTryBeat: (best: string) => string;
 }
 
 export const en: Translations = {
@@ -75,7 +72,7 @@ export const en: Translations = {
   dailyCompleteBody: "Come back tomorrow for a new set — or play through today's again.",
   playAgain: "Play Again",
   nextPuzzle: "Next Puzzle →",
-  puzzleOf: (index, total) => `Puzzle ${index} of ${total}`,
+  dailyPuzzleOf: (index, total) => `Today's Puzzle ${index} of ${total}`,
   dailySolvedAll: (count) => `🏆 You solved all ${count} puzzles.`,
 
   undo: "Undo",
@@ -103,9 +100,8 @@ export const en: Translations = {
   movesLabel: "Moves: ",
   bestKnownLabel: "Best known: ",
   levelCompletePlain: "Level complete!",
-  newRecord: (best, moves) => `🏆 New record! Beat the best known score (${best}) with ${moves}.`,
-  matchedBest: "🏆 Matched the best known score!",
-  completeTryBeat: (best) => `Level complete! Best known: ${best} — try again to beat it.`,
+  newRecord: "Level complete! 🏆 New record!",
+  matchedBest: "Level complete! 🏆 Matched best known score!",
 };
 
 
@@ -131,7 +127,7 @@ export const de: Translations = {
   dailyCompleteBody: "Komm morgen für ein neues Set wieder vorbei — oder spiele die heutigen Rätsel noch einmal.",
   playAgain: "Nochmal spielen",
   nextPuzzle: "Nächstes Rätsel →",
-  puzzleOf: (index, total) => `Rätsel ${index} von ${total}`,
+  dailyPuzzleOf: (index, total) => `Heutiges Rätsel ${index} von ${total}`,
   dailySolvedAll: (count) => `🏆 Du hast alle ${count} Rätsel gelöst.`,
 
   undo: "Rückgängig",
@@ -159,9 +155,8 @@ export const de: Translations = {
   movesLabel: "Züge: ",
   bestKnownLabel: "Bestwert: ",
   levelCompletePlain: "Level geschafft!",
-  newRecord: (best, moves) => `🏆 Neuer Rekord! Bestwert (${best}) mit ${moves} Zügen unterboten.`,
-  matchedBest: "🏆 Bestwert erreicht!",
-  completeTryBeat: (best) => `Level geschafft! Bestwert: ${best} — versuch's nochmal, um ihn zu unterbieten.`,
+  newRecord: "Level geschafft! 🏆 Neuer Rekord!",
+  matchedBest: "Level geschafft! 🏆 Bestwert erreicht!",
 };
 
 export const translations: Record<Language, Translations> = { en, de };

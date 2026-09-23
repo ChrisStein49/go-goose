@@ -20,6 +20,12 @@
   min-height: 36px;
 }
 
+.back-button {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .language-switcher {
   display: flex;
   gap: 6px;
@@ -33,8 +39,10 @@
   background: #b3adc9;
 }
 
-.language-switcher button.language-active {
-  background: var(--color-primary);
+.language-switcher button.language-active,
+.language-switcher button.language-active:hover {
+  background: #ffffff;
+  color: var(--color-primary);
 }
 
 .app-header h1 {
@@ -53,7 +61,6 @@
 .level-bar {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 6px 16px;
   margin-bottom: 8px;
@@ -61,11 +68,10 @@
 
 .level-name {
   font-weight: 600;
-  min-width: 200px;
 }
 
 .world-name {
-  font-weight: 400;
+  font-weight: 600;
   color: #4a4560;
 }
 
@@ -73,11 +79,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 8px 12px;
-  margin-bottom: 16px;
+  margin-left: auto;
   font-size: 15px;
-  min-height: 28px;
+}
+
+.complete-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .best-known {
@@ -197,15 +208,6 @@ button:not(:disabled):hover {
   gap: 12px;
 }
 
-.next-level-button {
-  display: block;
-  margin: 16px auto 0;
-  background: #3fae5a;
-}
-
-.next-level-button:hover {
-  background: #359049;
-}
 
 .level-select {
   text-align: left;

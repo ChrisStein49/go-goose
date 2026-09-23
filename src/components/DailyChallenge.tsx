@@ -2,7 +2,7 @@ import { useState } from "react";
 import { dailyLevels } from "../game/dailyLevels";
 import { useLanguage } from "../i18n/LanguageContext";
 import { GameBoard } from "./GameBoard";
-import { LevelStatusBar } from "./LevelStatusBar";
+import { LevelCompleteBadge, LevelStatusBar } from "./LevelStatusBar";
 
 interface DailyChallengeProps {
   onComplete: () => void;
@@ -55,26 +55,20 @@ export function DailyChallenge({ onComplete }: DailyChallengeProps) {
   return (
     <div className="daily-challenge">
       <div className="level-bar">
-        <span className="level-name">
-          <span className="world-name">{t.dailyChallenge}</span>
-          {t.levelBarSeparator}
-          {t.puzzleOf(index + 1, dailyLevels.length)}
-        </span>
-        <LevelStatusBar levelId={level.id} moveCount={moveCount} complete={complete} />
+        <span className="level-name">{t.dailyPuzzleOf(index + 1, dailyLevels.length)}</span>
+        <LevelStatusBar levelId={level.id} moveCount={moveCount} />
       </div>
+
+      {complete && <LevelCompleteBadge levelId={level.id} moveCount={moveCount} />}
 
       <GameBoard
         key={level.id}
         level={level}
         onMoveCountChange={setMoveCount}
         onCompleteChange={handlePuzzleCompleteChange}
+        onNext={goToNextPuzzle}
+        nextLabel={t.nextPuzzle}
       />
-
-      {complete && !isLastPuzzle && (
-        <button className="next-level-button" onClick={goToNextPuzzle}>
-          {t.nextPuzzle}
-        </button>
-      )}
     </div>
   );
 }
