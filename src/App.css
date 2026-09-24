@@ -310,16 +310,16 @@ button:not(:disabled):hover {
 
 .how-to-example-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 12px;
   margin-top: 12px;
-  flex-wrap: wrap;
 }
 
 .how-to-arrow {
   font-size: 22px;
   color: var(--color-primary);
+  align-self: center;
 }
 
 .mini-board-figure {
@@ -614,5 +614,14 @@ button:not(:disabled):hover {
   .cell {
     width: 52px;
     height: 52px;
+  }
+
+  .how-to-example-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-to-arrow {
+    transform: rotate(90deg);
   }
 }
