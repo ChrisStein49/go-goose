@@ -9,8 +9,9 @@ export interface Translations {
   levelBarSeparator: string;
 
   creditsTitle: string;
-  creditsBody: string;
-  creditsNote: string;
+  creditsDesign: string;
+  creditsConceptDevelopment: string;
+  creditsBuild: string;
 
   play: string;
   dailyChallenge: string;
@@ -59,8 +60,9 @@ export const en: Translations = {
   levelBarSeparator: " · ",
 
   creditsTitle: "Credits",
-  creditsBody: "Go Goose was designed and built by Christoph.",
-  creditsNote: "Built with Claude Code.",
+  creditsDesign: "Design: Ganzgraz",
+  creditsConceptDevelopment: "Concept and Development: Christoph Steinkellner",
+  creditsBuild: "Build: with Claude Code",
 
   play: "Play",
   dailyChallenge: "Today's Challenge",
@@ -106,7 +108,7 @@ export const en: Translations = {
 
 
 export const de: Translations = {
-  appTitle: "Gänsemarsch",
+  appTitle: "Gänseschar",
   appSubtitle: "Bewege die Gänse, bis jede Farbe zu einem Schwarm zusammenfindet.",
   menuBack: "← Menü",
   mapBack: "← Karte",
@@ -114,8 +116,9 @@ export const de: Translations = {
   levelBarSeparator: " · ",
 
   creditsTitle: "Credits",
-  creditsBody: "Gänsemarsch wurde von Christoph entworfen und entwickelt.",
-  creditsNote: "Erstellt mit Claude Code.",
+  creditsDesign: "Design: Ganzgraz",
+  creditsConceptDevelopment: "Konzept und Entwicklung: Christoph Steinkellner",
+  creditsBuild: "Erstellt mit: Claude Code",
 
   play: "Spielen",
   dailyChallenge: "Heutiges Rätsel",

@@ -7,8 +7,9 @@ export function Credits() {
     <div className="credits">
       <section>
         <h2>{t.creditsTitle}</h2>
-        <p>{t.creditsBody}</p>
-        <p className="credits-note">{t.creditsNote}</p>
+        <p>{t.creditsDesign}</p>
+        <p>{t.creditsConceptDevelopment}</p>
+        <p>{t.creditsBuild}</p>
       </section>
     </div>
   );

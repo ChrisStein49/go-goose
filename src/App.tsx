@@ -94,7 +94,7 @@ function App() {
       <header className="app-header">
         <img src="/goose-orange.svg" alt="" className="app-logo" />
         <h1>{t.appTitle}</h1>
-        <p className="subtitle">{t.appSubtitle}</p>
+        {screen !== "credits" && <p className="subtitle">{t.appSubtitle}</p>}
       </header>
 
       {screen === "menu" && (

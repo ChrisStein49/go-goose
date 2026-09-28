@@ -303,11 +303,6 @@ button:not(:disabled):hover {
   color: #2c2a3a;
 }
 
-.credits-note {
-  color: #4a4560 !important;
-  font-size: 14px;
-}
-
 .how-to-example-row {
   display: flex;
   align-items: flex-start;
