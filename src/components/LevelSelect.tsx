@@ -1,21 +1,22 @@
+import { bestMoves } from "../game/bestMoves.generated";
 import { allLevels, worlds } from "../game/levels";
 import type { Level } from "../game/types";
 import { useLanguage } from "../i18n/LanguageContext";
 import { localizedWorldName } from "../i18n/worldNames";
 
 interface LevelSelectProps {
-  completed: Set<string>;
+  levelProgress: Record<string, number>;
   onSelectLevel: (level: Level) => void;
 }
 
-export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
+export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) {
   const { language } = useLanguage();
   const indexOf = new Map(allLevels.map((level, i) => [level.id, i]));
 
   function isUnlocked(level: Level): boolean {
     const index = indexOf.get(level.id)!;
     if (index === 0) return true;
-    return completed.has(allLevels[index - 1].id);
+    return allLevels[index - 1].id in levelProgress;
   }
 
   return (
@@ -26,7 +27,9 @@ export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
           <div className="level-grid">
             {world.levels.map((level, i) => {
               const unlocked = isUnlocked(level);
-              const done = completed.has(level.id);
+              const done = level.id in levelProgress;
+              const best = bestMoves[level.id];
+              const optimal = done && best !== undefined && levelProgress[level.id] <= best.moves;
               return (
                 <button
                   key={level.id}
@@ -38,6 +41,7 @@ export function LevelSelect({ completed, onSelectLevel }: LevelSelectProps) {
                   title={`Level ${i + 1}`}
                 >
                   {done ? "✓" : unlocked ? i + 1 : "🔒"}
+                  {optimal && <span className="level-star-badge">⭐</span>}
                 </button>
               );
             })}

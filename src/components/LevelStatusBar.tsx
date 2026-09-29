@@ -5,9 +5,10 @@ import type { Translations } from "../i18n/translations";
 interface LevelStatusBarProps {
   levelId: string;
   moveCount: number;
+  showBestKnown?: boolean;
 }
 
-export function LevelStatusBar({ levelId, moveCount }: LevelStatusBarProps) {
+export function LevelStatusBar({ levelId, moveCount, showBestKnown = true }: LevelStatusBarProps) {
   const { t } = useLanguage();
   const best = bestMoves[levelId];
 
@@ -17,7 +18,7 @@ export function LevelStatusBar({ levelId, moveCount }: LevelStatusBarProps) {
         {t.movesLabel}
         {moveCount}
       </span>
-      {best && (
+      {showBestKnown && best && (
         <span className="best-known">
           {t.bestKnownLabel}
           {best.moves}

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 import { boardFromLevel, getIncompleteColors, isLevelComplete, pushGoose } from "../game/board";
 import type { Board, Direction, Level } from "../game/types";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -9,7 +10,7 @@ const SWIPE_THRESHOLD = 24;
 interface GameBoardProps {
   level: Level;
   onMoveCountChange?: (count: number) => void;
-  onCompleteChange?: (complete: boolean) => void;
+  onCompleteChange?: (complete: boolean, moveCount: number) => void;
   onNext?: () => void;
   nextLabel?: string;
 }
@@ -43,8 +44,8 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange, onNext, 
   }, [history.length, onMoveCountChange]);
 
   useEffect(() => {
-    onCompleteChange?.(complete);
-  }, [complete, onCompleteChange]);
+    onCompleteChange?.(complete, history.length);
+  }, [complete, history.length, onCompleteChange]);
 
   function applyPush(row: number, col: number, direction: Direction) {
     const result = pushGoose(board, row, col, direction);
@@ -122,7 +123,12 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange, onNext, 
     <div className="game-board-wrapper">
       <div
         className="game-board"
-        style={{ gridTemplateColumns: `repeat(${level.cols}, 1fr)` }}
+        style={
+          {
+            gridTemplateColumns: `repeat(${level.cols}, 1fr)`,
+            "--cols": level.cols,
+          } as CSSProperties
+        }
         tabIndex={0}
         onKeyDown={handleKeyDown}
       >
@@ -143,6 +149,7 @@ export function GameBoard({ level, onMoveCountChange, onCompleteChange, onNext, 
                   isAnchor ? "cell-anchor" : "",
                   isSelected ? "cell-selected" : "",
                   isDone ? "cell-done" : "",
+                  isDone && complete ? "cell-celebrate" : "",
                 ]
                   .filter(Boolean)
                   .join(" ")}

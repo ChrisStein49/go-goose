@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Credits } from "./components/Credits";
 import { DailyChallenge } from "./components/DailyChallenge";
@@ -9,9 +9,9 @@ import { LevelSelect } from "./components/LevelSelect";
 import { MainMenu } from "./components/MainMenu";
 import { LevelCompleteBadge, LevelStatusBar } from "./components/LevelStatusBar";
 import { ReverseEditor } from "./components/ReverseEditor";
-import { loadDailyCompleted, saveDailyCompleted } from "./game/dailyProgress";
+import { loadDailyCompletedToday, loadDailyStreak, recordDailyCompletion } from "./game/dailyProgress";
 import { allLevels, levelDisplayName, worldIdForLevel, worldNameForLevel } from "./game/levels";
-import { loadCompletedLevels, saveCompletedLevels } from "./game/progress";
+import { loadLevelProgress, saveLevelProgress } from "./game/progress";
 import type { Level } from "./game/types";
 import { useLanguage } from "./i18n/LanguageContext";
 import { localizedWorldName } from "./i18n/worldNames";
@@ -25,11 +25,41 @@ function App() {
     if (window.location.hash === "#reverse-editor") return "reverse-editor";
     return "menu";
   });
-  const [completed, setCompleted] = useState<Set<string>>(() => loadCompletedLevels());
-  const [dailyCompleted, setDailyCompleted] = useState(() => loadDailyCompleted());
+  const [levelProgress, setLevelProgress] = useState<Record<string, number>>(() => loadLevelProgress());
+  const [dailyCompleted, setDailyCompleted] = useState(() => loadDailyCompletedToday());
+  const [dailyStreak, setDailyStreak] = useState(() => loadDailyStreak());
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);
+  const [showLeaveConfirm, setShowLeaveConfirm] = useState(false);
+
+  const guardedScreen = screen === "level" || screen === "daily";
+
+  useEffect(() => {
+    if (!guardedScreen) return;
+
+    history.pushState({ goGooseGuard: true }, "");
+
+    function handlePopState() {
+      history.pushState({ goGooseGuard: true }, "");
+      setShowLeaveConfirm(true);
+    }
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [guardedScreen]);
+
+  useEffect(() => {
+    if (!guardedScreen) return;
+
+    function handleBeforeUnload(e: BeforeUnloadEvent) {
+      e.preventDefault();
+      e.returnValue = "";
+    }
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [guardedScreen]);
 
   function openLevel(level: Level) {
     setCurrentLevel(level);
@@ -38,19 +68,21 @@ function App() {
     setScreen("level");
   }
 
-  function handleCompleteChange(isComplete: boolean) {
+  function handleCompleteChange(isComplete: boolean, moves: number) {
     setComplete(isComplete);
-    if (isComplete && currentLevel && !completed.has(currentLevel.id)) {
-      const next = new Set(completed);
-      next.add(currentLevel.id);
-      setCompleted(next);
-      saveCompletedLevels(next);
+    if (isComplete && currentLevel) {
+      const existing = levelProgress[currentLevel.id];
+      if (existing === undefined || moves < existing) {
+        const next = { ...levelProgress, [currentLevel.id]: moves };
+        setLevelProgress(next);
+        saveLevelProgress(next);
+      }
     }
   }
 
   function handleDailyComplete() {
     setDailyCompleted(true);
-    saveDailyCompleted(true);
+    setDailyStreak(recordDailyCompletion());
   }
 
   function goToNextLevel() {
@@ -61,12 +93,24 @@ function App() {
     else setScreen("worlds");
   }
 
+  function confirmLeave() {
+    setShowLeaveConfirm(false);
+    if (screen === "level") setScreen("worlds");
+    else if (screen === "daily") setScreen("menu");
+  }
+
+  function cancelLeave() {
+    setShowLeaveConfirm(false);
+  }
+
   const backButton =
     screen === "level"
-      ? { label: t.mapBack, onClick: () => setScreen("worlds") }
-      : screen === "worlds" || screen === "daily" || screen === "how-to-play" || screen === "credits"
-        ? { label: t.menuBack, onClick: () => setScreen("menu") }
-        : null;
+      ? { label: t.mapBack, onClick: () => setShowLeaveConfirm(true) }
+      : screen === "daily"
+        ? { label: t.menuBack, onClick: () => setShowLeaveConfirm(true) }
+        : screen === "worlds" || screen === "how-to-play" || screen === "credits"
+          ? { label: t.menuBack, onClick: () => setScreen("menu") }
+          : null;
 
   return (
     <div className="app">
@@ -104,12 +148,13 @@ function App() {
           onHowToPlay={() => setScreen("how-to-play")}
           onCredits={() => setScreen("credits")}
           dailyCompleted={dailyCompleted}
+          dailyStreak={dailyStreak}
         />
       )}
 
-      {screen === "worlds" && <LevelSelect completed={completed} onSelectLevel={openLevel} />}
+      {screen === "worlds" && <LevelSelect levelProgress={levelProgress} onSelectLevel={openLevel} />}
 
-      {screen === "daily" && <DailyChallenge onComplete={handleDailyComplete} />}
+      {screen === "daily" && <DailyChallenge onComplete={handleDailyComplete} streak={dailyStreak} />}
       {screen === "how-to-play" && <HowToPlay />}
       {screen === "credits" && <Credits />}
       {screen === "editor" && (
@@ -143,10 +188,8 @@ function App() {
               {t.levelBarSeparator}
               {levelDisplayName(currentLevel.id)}
             </span>
-            <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} />
+            <LevelStatusBar levelId={currentLevel.id} moveCount={moveCount} showBestKnown={false} />
           </div>
-
-          {complete && <LevelCompleteBadge levelId={currentLevel.id} moveCount={moveCount} />}
 
           <GameBoard
             key={currentLevel.id}
@@ -156,7 +199,23 @@ function App() {
             onNext={goToNextLevel}
             nextLabel={t.nextLevel}
           />
+
+          {complete && <LevelCompleteBadge levelId={currentLevel.id} moveCount={moveCount} />}
         </>
+      )}
+
+      {showLeaveConfirm && (
+        <div className="modal-overlay">
+          <div className="modal-box">
+            <p>{t.confirmLeaveMessage}</p>
+            <div className="modal-actions">
+              <button onClick={cancelLeave}>{t.no}</button>
+              <button className="modal-button-secondary" onClick={confirmLeave}>
+                {t.yes}
+              </button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

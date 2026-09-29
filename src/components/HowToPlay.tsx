@@ -33,8 +33,8 @@ const blockedAfter: Cell[][] = [
   [E, g(PURPLE), D, E],
 ];
 
-const anchorBefore: Cell[][] = [[g(GREEN), E, a(GREEN)]];
-const anchorAfter: Cell[][] = [[E, g(GREEN), a(GREEN)]];
+const anchorBefore: Cell[][] = [[g(GREEN), E, a(GREEN), E]];
+const anchorAfter: Cell[][] = [[E, g(GREEN), a(GREEN), E]];
 
 export function HowToPlay() {
   const { t } = useLanguage();

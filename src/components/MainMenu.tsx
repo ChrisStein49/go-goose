@@ -6,9 +6,17 @@ interface MainMenuProps {
   onHowToPlay: () => void;
   onCredits: () => void;
   dailyCompleted: boolean;
+  dailyStreak: number;
 }
 
-export function MainMenu({ onPlay, onDailyChallenge, onHowToPlay, onCredits, dailyCompleted }: MainMenuProps) {
+export function MainMenu({
+  onPlay,
+  onDailyChallenge,
+  onHowToPlay,
+  onCredits,
+  dailyCompleted,
+  dailyStreak,
+}: MainMenuProps) {
   const { t } = useLanguage();
 
   return (
@@ -18,6 +26,11 @@ export function MainMenu({ onPlay, onDailyChallenge, onHowToPlay, onCredits, dai
       </button>
       <button className="menu-button daily-menu-button" onClick={onDailyChallenge}>
         {t.dailyChallenge}
+        {dailyStreak > 0 && (
+          <span className="daily-streak-badge" title={t.dailyStreak(dailyStreak)}>
+            🔥 {dailyStreak}
+          </span>
+        )}
         {dailyCompleted && (
           <span className="daily-winner-badge" title={t.dailyChallengeCompletedTitle}>
             🏆
