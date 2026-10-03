@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Raw per-run output of the daily-puzzle generators (the merged pool in
+# src/game/dailyPool.generated.ts is what ships)
+scripts/pool-out/
+scripts/daily3-out/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

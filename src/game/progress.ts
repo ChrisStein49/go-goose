@@ -29,6 +29,11 @@ export function loadLevelProgress(): LevelProgress {
   }
 }
 
+/** The recorded fewest-moves for a level, or null if there is none (never completed, or completed before move tracking existed). */
+export function knownMoves(value: number | undefined): number | null {
+  return value === undefined || value >= UNKNOWN_MOVES ? null : value;
+}
+
 export function saveLevelProgress(progress: LevelProgress): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));

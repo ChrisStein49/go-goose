@@ -10,7 +10,7 @@ interface LevelSelectProps {
 }
 
 export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const indexOf = new Map(allLevels.map((level, i) => [level.id, i]));
 
   function isUnlocked(level: Level): boolean {
@@ -19,17 +19,34 @@ export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) 
     return allLevels[index - 1].id in levelProgress;
   }
 
+  /** A star = solved in at most the best known number of moves. */
+  function hasStar(level: Level): boolean {
+    const best = bestMoves[level.id];
+    return level.id in levelProgress && best !== undefined && levelProgress[level.id] <= best.moves;
+  }
+
+  /** Levels that can earn a star at all (those with a best known score). */
+  const starrable = (levels: Level[]) => levels.filter((level) => bestMoves[level.id] !== undefined);
+  const earnedIn = (levels: Level[]) => starrable(levels).filter(hasStar).length;
+
   return (
     <div className="level-select">
+      <p className="stars-total">{t.starsTotal(earnedIn(allLevels), starrable(allLevels).length)}</p>
       {worlds.map((world) => (
         <div className="world-section" key={world.id}>
-          <h2>{localizedWorldName(world.id, world.name, language)}</h2>
+          <h2>
+            {localizedWorldName(world.id, world.name, language)}
+            <span className="world-stars">
+              ⭐ {earnedIn(world.levels)}/{starrable(world.levels).length}
+            </span>
+          </h2>
           <div className="level-grid">
             {world.levels.map((level, i) => {
               const unlocked = isUnlocked(level);
               const done = level.id in levelProgress;
-              const best = bestMoves[level.id];
-              const optimal = done && best !== undefined && levelProgress[level.id] <= best.moves;
+              const starred = hasStar(level);
+              // Solved but not yet at the best known score: a faint empty star invites a replay.
+              const starPending = done && !starred && bestMoves[level.id] !== undefined;
               return (
                 <button
                   key={level.id}
@@ -41,7 +58,8 @@ export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) 
                   title={`Level ${i + 1}`}
                 >
                   {done ? "✓" : unlocked ? i + 1 : "🔒"}
-                  {optimal && <span className="level-star-badge">⭐</span>}
+                  {starred && <span className="level-star-badge">⭐</span>}
+                  {starPending && <span className="level-star-badge level-star-pending">☆</span>}
                 </button>
               );
             })}

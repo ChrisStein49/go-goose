@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { bestMoves } from "../game/bestMoves.generated";
-import { dailyLevels } from "../game/dailyLevels";
+import { useMemo, useState } from "react";
+import { bestKnown } from "../game/bestKnown";
+import { dailyPuzzlesFor } from "../game/dailySchedule";
 import { useLanguage } from "../i18n/LanguageContext";
 import { GameBoard } from "./GameBoard";
 import { LevelCompleteBadge, LevelStatusBar } from "./LevelStatusBar";
@@ -11,7 +11,7 @@ interface DailyChallengeProps {
 }
 
 function isOptimal(levelId: string, moves: number): boolean {
-  const best = bestMoves[levelId];
+  const best = bestKnown[levelId];
   return best !== undefined && moves <= best.moves;
 }
 
@@ -22,6 +22,8 @@ function isOptimal(levelId: string, moves: number): boolean {
  */
 export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
   const { t } = useLanguage();
+  // Picked once per visit, from the player's local date.
+  const dailyLevels = useMemo(() => dailyPuzzlesFor(), []);
   const [index, setIndex] = useState(0);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);

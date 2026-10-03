@@ -11,7 +11,7 @@ import { LevelCompleteBadge, LevelStatusBar } from "./components/LevelStatusBar"
 import { ReverseEditor } from "./components/ReverseEditor";
 import { loadDailyCompletedToday, loadDailyStreak, recordDailyCompletion } from "./game/dailyProgress";
 import { allLevels, levelDisplayName, worldIdForLevel, worldNameForLevel } from "./game/levels";
-import { loadLevelProgress, saveLevelProgress } from "./game/progress";
+import { knownMoves, loadLevelProgress, saveLevelProgress } from "./game/progress";
 import type { Level } from "./game/types";
 import { useLanguage } from "./i18n/LanguageContext";
 import { localizedWorldName } from "./i18n/worldNames";
@@ -31,6 +31,9 @@ function App() {
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);
+  // The player's fewest moves on this level as of the start of the current run
+  // (null = none yet); used to word the level-complete message.
+  const [bestBeforeRun, setBestBeforeRun] = useState<number | null>(null);
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false);
 
   const guardedScreen = screen === "level" || screen === "daily";
@@ -70,6 +73,9 @@ function App() {
 
   function handleCompleteChange(isComplete: boolean, moves: number) {
     setComplete(isComplete);
+    // GameBoard re-reports on every render, so snapshot the best score only while the level
+    // is NOT complete — by the time it is complete, the progress has already been updated.
+    if (!isComplete && currentLevel) setBestBeforeRun(knownMoves(levelProgress[currentLevel.id]));
     if (isComplete && currentLevel) {
       const existing = levelProgress[currentLevel.id];
       if (existing === undefined || moves < existing) {
@@ -200,7 +206,7 @@ function App() {
             nextLabel={t.nextLevel}
           />
 
-          {complete && <LevelCompleteBadge levelId={currentLevel.id} moveCount={moveCount} />}
+          {complete && <LevelCompleteBadge levelId={currentLevel.id} moveCount={moveCount} previousBest={bestBeforeRun} />}
         </>
       )}
 

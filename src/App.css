@@ -237,9 +237,28 @@ button:not(:disabled):hover {
 }
 
 .world-section h2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
   font-size: 18px;
   margin: 0 0 10px;
   color: #2c2a3a;
+}
+
+.world-stars {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.stars-total {
+  margin: 0 0 18px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-primary);
 }
 
 .level-grid {
@@ -277,6 +296,15 @@ button:not(:disabled):hover {
   border-radius: 999px;
   padding: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Solved, but not yet at the best known score: a faint empty star inviting a replay. */
+.level-star-pending {
+  background: rgba(255, 255, 255, 0.85);
+  color: #8a84a3;
+  box-shadow: none;
+  font-size: 13px;
+  padding: 1px 3px;
 }
 
 .main-menu {

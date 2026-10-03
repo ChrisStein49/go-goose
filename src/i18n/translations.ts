@@ -52,6 +52,9 @@ export interface Translations {
   levelCompletePlain: string;
   newRecord: string;
   matchedBest: string;
+  starsTotal: (earned: number, total: number) => string;
+  personalBestNew: (yours: number, best: number, proven: boolean) => string;
+  personalBestKept: (yours: number, best: number, proven: boolean) => string;
 
   confirmLeaveMessage: string;
   yes: string;
@@ -114,6 +117,11 @@ export const en: Translations = {
   levelCompletePlain: "Level complete!",
   newRecord: "Level complete! 🏆 New record!",
   matchedBest: "Level complete! 🏆 Matched best known score!",
+  starsTotal: (earned, total) => `⭐ ${earned} / ${total} best scores matched`,
+  personalBestNew: (yours, best, proven) =>
+    `Level complete! New personal best: ${yours} moves (best known: ${best}${proven ? "" : "+"})`,
+  personalBestKept: (yours, best, proven) =>
+    `Level complete! Your best: ${yours} moves (best known: ${best}${proven ? "" : "+"})`,
 
   confirmLeaveMessage: "Leave the game?",
   yes: "Yes",
@@ -177,6 +185,11 @@ export const de: Translations = {
   levelCompletePlain: "Level geschafft!",
   newRecord: "Level geschafft! 🏆 Neuer Rekord!",
   matchedBest: "Level geschafft! 🏆 Bestwert erreicht!",
+  starsTotal: (earned, total) => `⭐ ${earned} / ${total} Bestwerte erreicht`,
+  personalBestNew: (yours, best, proven) =>
+    `Level geschafft! Neue Bestleistung: ${yours} Züge (Bestwert: ${best}${proven ? "" : "+"})`,
+  personalBestKept: (yours, best, proven) =>
+    `Level geschafft! Deine Bestleistung: ${yours} Züge (Bestwert: ${best}${proven ? "" : "+"})`,
 
   confirmLeaveMessage: "Spiel verlassen?",
   yes: "Ja",
