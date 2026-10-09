@@ -1,4 +1,4 @@
-import { bestMoves } from "../game/bestMoves.generated";
+import { bestKnown } from "../game/bestKnown";
 import { allLevels, worlds } from "../game/levels";
 import type { Level } from "../game/types";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -21,12 +21,12 @@ export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) 
 
   /** A star = solved in at most the best known number of moves. */
   function hasStar(level: Level): boolean {
-    const best = bestMoves[level.id];
+    const best = bestKnown[level.id];
     return level.id in levelProgress && best !== undefined && levelProgress[level.id] <= best.moves;
   }
 
   /** Levels that can earn a star at all (those with a best known score). */
-  const starrable = (levels: Level[]) => levels.filter((level) => bestMoves[level.id] !== undefined);
+  const starrable = (levels: Level[]) => levels.filter((level) => bestKnown[level.id] !== undefined);
   const earnedIn = (levels: Level[]) => starrable(levels).filter(hasStar).length;
 
   return (
@@ -46,7 +46,7 @@ export function LevelSelect({ levelProgress, onSelectLevel }: LevelSelectProps) 
               const done = level.id in levelProgress;
               const starred = hasStar(level);
               // Solved but not yet at the best known score: a faint empty star invites a replay.
-              const starPending = done && !starred && bestMoves[level.id] !== undefined;
+              const starPending = done && !starred && bestKnown[level.id] !== undefined;
               return (
                 <button
                   key={level.id}

@@ -395,6 +395,11 @@ button:not(:disabled):hover {
   color: #2c2a3a;
 }
 
+.credits-link {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 .how-to-example-row {
   display: flex;
   align-items: flex-start;

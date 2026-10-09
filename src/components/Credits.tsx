@@ -6,10 +6,18 @@ export function Credits() {
   return (
     <div className="credits">
       <section>
-        <h2>{t.creditsTitle}</h2>
-        <p>{t.creditsDesign}</p>
-        <p>{t.creditsConceptDevelopment}</p>
-        <p>{t.creditsBuild}</p>
+        <p>
+          <strong>{t.creditsDesign}:</strong>{" "}
+          <a className="credits-link" href="https://ganzgraz.at/" target="_blank" rel="noopener noreferrer">
+            ganzgraz
+          </a>
+        </p>
+        <p>
+          <strong>{t.creditsConceptDevelopment}:</strong> Christoph Steinkellner
+        </p>
+        <p>
+          <strong>{t.creditsBuild}:</strong> Claude Code
+        </p>
       </section>
     </div>
   );

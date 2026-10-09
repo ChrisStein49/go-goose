@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./App.css";
 import { Credits } from "./components/Credits";
 import { DailyChallenge } from "./components/DailyChallenge";
@@ -35,6 +35,13 @@ function App() {
   // (null = none yet); used to word the level-complete message.
   const [bestBeforeRun, setBestBeforeRun] = useState<number | null>(null);
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false);
+  // Scroll position of the level list, so coming back from a level (e.g. after
+  // tapping the wrong one) lands where the player was instead of at the top.
+  const worldsScrollY = useRef(0);
+
+  useLayoutEffect(() => {
+    if (screen === "worlds") window.scrollTo(0, worldsScrollY.current);
+  }, [screen]);
 
   const guardedScreen = screen === "level" || screen === "daily";
 
@@ -65,6 +72,8 @@ function App() {
   }, [guardedScreen]);
 
   function openLevel(level: Level) {
+    // Only remember the position when leaving the level list (not when moving level to level).
+    if (screen === "worlds") worldsScrollY.current = window.scrollY;
     setCurrentLevel(level);
     setMoveCount(0);
     setComplete(false);
@@ -149,7 +158,10 @@ function App() {
 
       {screen === "menu" && (
         <MainMenu
-          onPlay={() => setScreen("worlds")}
+          onPlay={() => {
+            worldsScrollY.current = 0; // a fresh visit from the menu starts at the top
+            setScreen("worlds");
+          }}
           onDailyChallenge={() => setScreen("daily")}
           onHowToPlay={() => setScreen("how-to-play")}
           onCredits={() => setScreen("credits")}

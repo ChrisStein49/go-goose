@@ -1826,6 +1826,73 @@ export const worlds: World[] = [
 ],
 },
 
+    {
+    id: "world-028", 
+    name: "Rainbow",
+    levels: [
+{
+  id: "world-028-1",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [E, E, AO(), P(), E],
+      [E, E, E, E, E],
+      [D, E, AO(), E, AG()],
+      [E, E, E, E, E],
+      [AP(), E, AP(), G(), O()],
+  ],
+},
+{
+  id: "world-028-2",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [G(), E, E, E, E],
+      [AO(), E, AO(), E, E],
+      [E, E, AG(), E, AG()],
+      [AO(), E, E, E, E],
+      [G(), E, AG(), O(), O()],
+  ],
+},
+{
+  id: "world-028-3",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [O(), E, E, E, O()],
+      [E, AO(), E, AO(), E],
+      [E, E, E, E, E],
+      [E, AO(), E, AO(), E],
+      [O(), E, E, E, P()],
+  ],
+},
+{
+  id: "world-028-4",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [AP(), AO(), E, AG(), O()],
+      [E, E, E, E, G()],
+      [E, E, E, E, E],
+      [E, AO(), E, AG(), E],
+      [G(), E, E, O(), P()],
+  ],
+},
+{
+  id: "world-028-5",
+  rows: 5,
+  cols: 5,
+  cells: [
+      [P(), E, E, E, G()],
+      [E, AO(), AG(), E, AP()],
+      [E, E, E, E, E],
+      [E, AO(), AG(), E, AP()],
+      [O(), E, E, E, P()],
+  ],
+},
+
+],
+},
   
 ];
 

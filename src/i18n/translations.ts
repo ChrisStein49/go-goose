@@ -8,7 +8,6 @@ export interface Translations {
   nextLevel: string;
   levelBarSeparator: string;
 
-  creditsTitle: string;
   creditsDesign: string;
   creditsConceptDevelopment: string;
   creditsBuild: string;
@@ -69,10 +68,9 @@ export const en: Translations = {
   nextLevel: "Next Level →",
   levelBarSeparator: " · ",
 
-  creditsTitle: "Credits",
-  creditsDesign: "Design: ganzgraz",
-  creditsConceptDevelopment: "Concept and Development: Christoph Steinkellner",
-  creditsBuild: "Build: with Claude Code",
+  creditsDesign: "Design",
+  creditsConceptDevelopment: "Concept and Development",
+  creditsBuild: "Built with",
 
   play: "Play",
   dailyChallenge: "Today's Challenge",
@@ -137,10 +135,9 @@ export const de: Translations = {
   nextLevel: "Nächstes Level →",
   levelBarSeparator: " · ",
 
-  creditsTitle: "Credits",
-  creditsDesign: "Design: ganzgraz",
-  creditsConceptDevelopment: "Konzept und Entwicklung: Christoph Steinkellner",
-  creditsBuild: "Erstellt mit: Claude Code",
+  creditsDesign: "Design",
+  creditsConceptDevelopment: "Konzept und Entwicklung",
+  creditsBuild: "Erstellt mit",
 
   play: "Spielen",
   dailyChallenge: "Rätsel des Tages",

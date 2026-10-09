@@ -34,6 +34,7 @@ const worldNamesDe: Record<string, string> = {
   "world-025": "Sumpf",
   "world-026": "Moor",
   "world-027": "Terrasse",
+  "world-028": "Regenbogen",
 };
 
 export function localizedWorldName(worldId: string, englishName: string, language: Language): string {

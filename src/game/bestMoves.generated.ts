@@ -144,4 +144,9 @@ export const bestMoves: Record<string, BestKnownMoves> = {
   "world-027-2": { moves: 62, proven: false },
   "world-027-3": { moves: 24, proven: true },
   "world-027-5": { moves: 28, proven: false },
+  "world-028-1": { moves: 13, proven: true },
+  "world-028-2": { moves: 14, proven: true },
+  "world-028-3": { moves: 14, proven: true },
+  "world-028-4": { moves: 15, proven: true },
+  "world-028-5": { moves: 16, proven: true },
 };
