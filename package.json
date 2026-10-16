@@ -12,6 +12,8 @@
     "compute-best-moves": "tsx scripts/computeBestMoves.ts"
   },
   "dependencies": {
+    "@fontsource/league-spartan": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

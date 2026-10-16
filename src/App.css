@@ -400,6 +400,61 @@ button:not(:disabled):hover {
   font-weight: 700;
 }
 
+.credits-logo-link {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+  line-height: 0;
+}
+
+.credits-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.credits-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.credits-button {
+  display: block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.credits-button:hover {
+  filter: brightness(0.94);
+}
+
+.credits-button-newsletter {
+  background: var(--color-accent);
+  color: #2c2a3a;
+}
+
+.credits-button-member {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.credits-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.credits-legal .credits-link {
+  font-weight: 600;
+  font-size: 15px;
+}
+
 .how-to-example-row {
   display: flex;
   align-items: flex-start;
