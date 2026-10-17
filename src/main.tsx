@@ -7,6 +7,7 @@ import '@fontsource/montserrat/latin-400-italic.css'
 import '@fontsource/montserrat/latin-600.css'
 import '@fontsource/league-spartan/latin-700.css'
 import './index.css'
+import './embed'
 import App from './App.tsx'
 import { LanguageProvider } from './i18n/LanguageContext.tsx'
 
