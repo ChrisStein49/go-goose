@@ -70,7 +70,7 @@ the enforcing header):
 
 ```
 /*
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self' https://ganzgraz.at https://*.ganzgraz.at
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
 ```
@@ -83,6 +83,25 @@ is a proposal and has not been tested on the live site yet.
 - [ ] Every host sees visitor IP addresses in its server logs. Make sure the hosting agreement
       (data processing addendum) with Cloudflare is in place.
 - [ ] The privacy policy (Datenschutzerklärung) on ganzgraz.at names the hosting provider.
+
+## 6b. Embedding on ganzgraz.at/spiel (iframe)
+
+The game is shown on ganzgraz.at inside an iframe (like the ad booking tool and the event
+calendar), so no DNS change in the we.publish Cloudflare account is needed.
+
+```html
+<iframe src="https://<cloudflare-url>/#heute"
+  style="width:100%;height:85vh;border:0"
+  allow="web-share; clipboard-write" title="Gänseschar"></iframe>
+```
+
+- `#heute` opens Today's Challenge directly; leave it off to start at the main menu.
+- `allow="web-share; clipboard-write"` is required, otherwise the share button is blocked
+  inside the frame.
+- `public/_headers` sets `frame-ancestors` so only ganzgraz.at may embed the game.
+- The share button always links to https://ganzgraz.at/spiel (fixed in code). Promote only that
+  address; localStorage (progress, streak) is separate for the embedded and the direct URL.
+- Test on a phone: the board should fill roughly one screen inside the frame.
 
 ## 7. Custom domain
 
