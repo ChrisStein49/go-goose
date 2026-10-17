@@ -1,0 +1,6 @@
+# Read by both Netlify and Cloudflare. The game is embedded in an iframe on
+# ganzgraz.at/spiel, so frame-ancestors must allow that host (not 'none').
+/*
+  Content-Security-Policy: frame-ancestors 'self' https://ganzgraz.at https://*.ganzgraz.at
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
