@@ -25,7 +25,6 @@ export interface Translations {
   dailyCompleteTitle: string;
   dailyCompleteBody: string;
   playAgain: string;
-  nextPuzzle: string;
   dailyPuzzleOf: (index: number, total: number) => string;
   dailySolvedAll: (count: number, moves: number) => string;
   dailyStreak: (streak: number) => string;
@@ -83,16 +82,15 @@ export const en: Translations = {
 
   play: "Play",
   dailyChallenge: "Today's Challenge",
-  dailyChallengeCompletedTitle: "Today's Challenge completed",
+  dailyChallengeCompletedTitle: "Already solved",
   howToPlay: "How to Play",
   credits: "Credits",
 
   dailyCompleteTitle: "Congratulations!",
   dailyCompleteBody: "New levels tomorrow. Or play through today's levels again.",
   playAgain: "Play Again",
-  nextPuzzle: "Next Puzzle →",
-  dailyPuzzleOf: (index, total) => `Today's Puzzle: ${index} of ${total}`,
-  dailySolvedAll: (count, moves) => `🏆 You solved all ${count} puzzles in ${moves} moves.`,
+  dailyPuzzleOf: (index, total) => `Today's Challenge: ${index} of ${total}`,
+  dailySolvedAll: (count, moves) => `🏆 You solved all ${count} levels in ${moves} moves.`,
   dailyStreak: (streak) => `🔥 ${streak} day streak!`,
   shareResult: "Share Result",
   shareCopiedMessage: "Copied to clipboard!",
@@ -153,17 +151,16 @@ export const de: Translations = {
   creditsMember: "Member werden",
 
   play: "Spielen",
-  dailyChallenge: "Rätsel des Tages",
-  dailyChallengeCompletedTitle: "Heutige Aufgabe gelöst",
+  dailyChallenge: "Heutige Challenge",
+  dailyChallengeCompletedTitle: "Bereits erledigt",
   howToPlay: "Spielanleitung",
   credits: "Credits",
 
   dailyCompleteTitle: "Gratulation!",
   dailyCompleteBody: "Morgen gibt es neue Levels. Oder spiele die heutigen Levels noch einmal.",
   playAgain: "Nochmal spielen",
-  nextPuzzle: "Nächstes Rätsel →",
-  dailyPuzzleOf: (index, total) => `Heutiges Rätsel: ${index} von ${total}`,
-  dailySolvedAll: (count, moves) => `🏆 Du hast alle ${count} Rätsel in ${moves} Zügen gelöst.`,
+  dailyPuzzleOf: (index, total) => `Heutige Challenge: ${index} von ${total}`,
+  dailySolvedAll: (count, moves) => `🏆 Du hast die ${count} Aufgaben in ${moves} Zügen gelöst.`,
   dailyStreak: (streak) => (streak === 1 ? "🔥 1 Tag in Folge!" : `🔥 ${streak} Tage in Folge!`),
   shareResult: "Ergebnis teilen",
   shareCopiedMessage: "In die Zwischenablage kopiert!",

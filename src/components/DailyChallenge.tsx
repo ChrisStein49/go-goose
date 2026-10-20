@@ -115,7 +115,7 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
         onMoveCountChange={setMoveCount}
         onCompleteChange={handlePuzzleCompleteChange}
         onNext={isLastPuzzle ? undefined : goToNextPuzzle}
-        nextLabel={t.nextPuzzle}
+        nextLabel={t.nextLevel}
       />
 
       {complete && <LevelCompleteBadge levelId={level.id} moveCount={moveCount} />}
