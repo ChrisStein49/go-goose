@@ -13,9 +13,28 @@
   margin: 0 auto 4px;
 }
 
-/* On the play screens the goose icon is smaller, to leave more room for the board. */
+/* Play screens: a compact header with the (smaller) goose icon and the title side by side,
+ * centered together, and the subtitle on its own line below, to leave more room for the board. */
+.app-header-play {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 12px;
+}
+
 .app-header-play .app-logo {
   width: 40px;
+  margin: 0;
+}
+
+.app-header-play h1 {
+  margin: 0;
+}
+
+.app-header-play .subtitle {
+  flex-basis: 100%;
+  margin-top: 4px;
 }
 
 .top-nav {

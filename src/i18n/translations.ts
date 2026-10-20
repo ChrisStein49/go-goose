@@ -66,7 +66,7 @@ export interface Translations {
 
 export const en: Translations = {
   appTitle: "Go Goose",
-  appSubtitle: "Push the geese so every color forms one connected flock.",
+  appSubtitle: "Connect every color into one flock.",
   menuBack: "← Menu",
   mapBack: "← Map",
   nextLevel: "Next Level →",
@@ -138,7 +138,7 @@ export const en: Translations = {
 
 export const de: Translations = {
   appTitle: "Gänseschar",
-  appSubtitle: "Bewege die Gänse, bis jede Farbe zu einer Schar zusammenfindet.",
+  appSubtitle: "Verbinde jede Farbe zu einer Schar.",
   menuBack: "← Menü",
   mapBack: "← Karte",
   nextLevel: "Nächstes Level →",
