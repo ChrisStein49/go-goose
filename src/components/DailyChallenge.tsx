@@ -11,11 +11,11 @@ interface DailyChallengeProps {
 }
 
 /**
- * Public address of the game. Fixed rather than window.location.origin because the
- * game is embedded in an iframe on ganzgraz.at/spiel: the origin would be the
- * hosting URL (…workers.dev), which nobody should share or bookmark.
+ * Public address of the game. Fixed rather than window.location.origin so shared links
+ * always point to the official address, even when the game is opened via a hosting URL
+ * (…pages.dev / …workers.dev) or embedded in an iframe.
  */
-const SHARE_URL = "https://ganzgraz.at/spiel";
+const SHARE_URL = "https://spiel.ganzgraz.at";
 
 function isOptimal(levelId: string, moves: number): boolean {
   const best = bestKnown[levelId];
