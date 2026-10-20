@@ -13,6 +13,11 @@
   margin: 0 auto 4px;
 }
 
+/* On the play screens the goose icon is smaller, to leave more room for the board. */
+.app-header-play .app-logo {
+  width: 40px;
+}
+
 .top-nav {
   display: flex;
   align-items: center;

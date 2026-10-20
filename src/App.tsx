@@ -150,7 +150,7 @@ function App() {
           </button>
         </div>
       </div>
-      <header className="app-header">
+      <header className={screen === "level" || screen === "daily" ? "app-header app-header-play" : "app-header"}>
         <img src="/goose-orange.svg" alt="" className="app-logo" />
         <h1>{t.appTitle}</h1>
         {screen !== "credits" && <p className="subtitle">{t.appSubtitle}</p>}
