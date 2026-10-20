@@ -23,6 +23,8 @@ function App() {
   const [screen, setScreen] = useState<Screen>(() => {
     if (window.location.hash === "#editor") return "editor";
     if (window.location.hash === "#reverse-editor") return "reverse-editor";
+    // Deep link for the newsletter / ganzgraz.at/spiel: open Today's Challenge directly.
+    if (window.location.hash === "#heute" || window.location.hash === "#today") return "daily";
     return "menu";
   });
   const [levelProgress, setLevelProgress] = useState<Record<string, number>>(() => loadLevelProgress());

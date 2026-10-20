@@ -10,6 +10,13 @@ interface DailyChallengeProps {
   streak: number;
 }
 
+/**
+ * Public address of the game. Fixed rather than window.location.origin so shared links
+ * always point to the official address, even when the game is opened via a hosting URL
+ * (…pages.dev / …workers.dev) or embedded in an iframe.
+ */
+const SHARE_URL = "https://spiel.ganzgraz.at";
+
 function isOptimal(levelId: string, moves: number): boolean {
   const best = bestKnown[levelId];
   return best !== undefined && moves <= best.moves;
@@ -85,7 +92,7 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
 
     if (navigator.share) {
       try {
-        await navigator.share({ text, url: window.location.origin });
+        await navigator.share({ text, url: SHARE_URL });
       } catch {
         // user cancelled or share failed; nothing to do
       }
@@ -93,7 +100,7 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
     }
 
     try {
-      await navigator.clipboard.writeText(`${text}\n${window.location.origin}`);
+      await navigator.clipboard.writeText(`${text}\n${SHARE_URL}`);
       setShareCopied(true);
       setTimeout(() => setShareCopied(false), 2000);
     } catch {
