@@ -381,6 +381,21 @@ button:not(:disabled):hover {
   color: var(--color-accent);
 }
 
+/* The congratulation and the streak share one centered row (wrapping on very narrow screens). */
+.daily-complete-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 20px;
+  margin-top: 8px;
+}
+
+.daily-complete-row h2,
+.daily-complete-row p {
+  margin: 0 0 8px;
+}
+
 .daily-complete-actions {
   display: flex;
   gap: 12px;

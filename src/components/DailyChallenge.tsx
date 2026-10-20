@@ -122,9 +122,11 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
 
       {finished && (
         <section>
-          <h2>{t.dailyCompleteTitle}</h2>
           <p className="complete-badge">{t.dailySolvedAll(dailyLevels.length, totalMoves)}</p>
-          <p className="daily-streak">{t.dailyStreak(streak)}</p>
+          <div className="daily-complete-row">
+            <h2>{t.dailyCompleteTitle}</h2>
+            <p className="daily-streak">{t.dailyStreak(streak)}</p>
+          </div>
           <p>{t.dailyCompleteBody}</p>
           <div className="daily-complete-actions">
             <button onClick={handleShare}>{t.shareResult}</button>
