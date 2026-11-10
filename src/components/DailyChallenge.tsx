@@ -1,14 +1,27 @@
-import { useMemo, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { bestKnown } from "../game/bestKnown";
+import { dateFromKey } from "../game/dailyProgress";
 import { dailyPuzzlesFor } from "../game/dailySchedule";
+import type { Level } from "../game/types";
 import { useLanguage } from "../i18n/LanguageContext";
 import { GameBoard } from "./GameBoard";
 import { LevelCompleteBadge, LevelStatusBar } from "./LevelStatusBar";
 
 interface DailyChallengeProps {
-  onComplete: () => void;
+  /** Called once the whole set is solved, with the day (YYYY-MM-DD) the puzzles belong to. */
+  onComplete: (day: string) => void;
   streak: number;
+  /** Today's local date (YYYY-MM-DD), kept current by useToday. */
+  today: string;
 }
+
+/** The three puzzles of one day, remembered together with the day they were picked for. */
+interface Session {
+  day: string;
+  levels: Level[];
+}
+
+const pickSession = (day: string): Session => ({ day, levels: dailyPuzzlesFor(dateFromKey(day)) });
 
 /**
  * Public address of the game. Fixed rather than window.location.origin so shared links
@@ -27,13 +40,19 @@ function isOptimal(levelId: string, moves: number): boolean {
  * separate from the Worlds progression — completing one doesn't touch
  * src/game/progress.ts's unlock state.
  */
-export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
+export function DailyChallenge({ onComplete, streak, today }: DailyChallengeProps) {
   const { t } = useLanguage();
-  // Picked once per visit, from the player's local date.
-  const dailyLevels = useMemo(() => dailyPuzzlesFor(), []);
+  // Picked when the screen opens, so a set is never swapped while someone is playing it.
+  const [session, setSession] = useState(() => pickSession(today));
+  const dailyLevels = session.levels;
   const [index, setIndex] = useState(0);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);
+
+  // The screen stayed open past midnight: move on to the new day's puzzles, but only while nothing
+  // has been played yet in the current set. Someone in the middle of a set may finish it first
+  // (a finished set is replaced on "Play again").
+  if (session.day !== today && index === 0 && moveCount === 0 && !complete) setSession(pickSession(today));
   // Final move count per puzzle, by position. Written by index (not added up), because
   // GameBoard re-reports "complete" on every render and the last board stays on screen.
   const [movesByPuzzle, setMovesByPuzzle] = useState<number[]>([]);
@@ -61,7 +80,7 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
       recordMoves(index, moves);
       if (!completionReported.current) {
         completionReported.current = true;
-        onComplete();
+        onComplete(session.day);
       }
     }
   }
@@ -74,6 +93,7 @@ export function DailyChallenge({ onComplete, streak }: DailyChallengeProps) {
   }
 
   function restart() {
+    setSession(pickSession(today)); // the same set on the same day, the new day's set after midnight
     setIndex(0);
     setMoveCount(0);
     setComplete(false);

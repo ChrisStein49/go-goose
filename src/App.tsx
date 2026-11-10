@@ -15,6 +15,10 @@ import { knownMoves, loadLevelProgress, saveLevelProgress } from "./game/progres
 import type { Level } from "./game/types";
 import { useLanguage } from "./i18n/LanguageContext";
 import { localizedWorldName } from "./i18n/worldNames";
+import { useToday } from "./useToday";
+
+/** What the menu shows for the daily challenge on a given day (trophy and streak). */
+const readDaily = (day: string) => ({ day, completed: loadDailyCompletedToday(day), streak: loadDailyStreak(day) });
 
 type Screen = "menu" | "worlds" | "level" | "daily" | "how-to-play" | "credits" | "editor" | "reverse-editor";
 
@@ -28,8 +32,11 @@ function App() {
     return "menu";
   });
   const [levelProgress, setLevelProgress] = useState<Record<string, number>>(() => loadLevelProgress());
-  const [dailyCompleted, setDailyCompleted] = useState(() => loadDailyCompletedToday());
-  const [dailyStreak, setDailyStreak] = useState(() => loadDailyStreak());
+  // The app can stay open past midnight (a tab, or an installed phone app), so follow the date and
+  // re-read the trophy and streak when the day changes instead of keeping yesterday's.
+  const today = useToday();
+  const [daily, setDaily] = useState(() => readDaily(today));
+  if (daily.day !== today) setDaily(readDaily(today));
   const [currentLevel, setCurrentLevel] = useState<Level | null>(null);
   const [moveCount, setMoveCount] = useState(0);
   const [complete, setComplete] = useState(false);
@@ -97,9 +104,10 @@ function App() {
     }
   }
 
-  function handleDailyComplete() {
-    setDailyCompleted(true);
-    setDailyStreak(recordDailyCompletion());
+  // `day` is the day the puzzles belong to (it can be yesterday if the set was finished after midnight).
+  function handleDailyComplete(day: string) {
+    recordDailyCompletion(day);
+    setDaily(readDaily(today));
   }
 
   function goToNextLevel() {
@@ -167,14 +175,14 @@ function App() {
           onDailyChallenge={() => setScreen("daily")}
           onHowToPlay={() => setScreen("how-to-play")}
           onCredits={() => setScreen("credits")}
-          dailyCompleted={dailyCompleted}
-          dailyStreak={dailyStreak}
+          dailyCompleted={daily.completed}
+          dailyStreak={daily.streak}
         />
       )}
 
       {screen === "worlds" && <LevelSelect levelProgress={levelProgress} onSelectLevel={openLevel} />}
 
-      {screen === "daily" && <DailyChallenge onComplete={handleDailyComplete} streak={dailyStreak} />}
+      {screen === "daily" && <DailyChallenge onComplete={handleDailyComplete} streak={daily.streak} today={today} />}
       {screen === "how-to-play" && <HowToPlay />}
       {screen === "credits" && <Credits />}
       {screen === "editor" && (
