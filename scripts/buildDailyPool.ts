@@ -8,8 +8,12 @@
 //
 //   npx tsx scripts/buildDailyPool.ts --merge
 //       Folds every scripts/pool-out/*.json into src/game/dailyPool.generated.ts
-//       (deduplicated, ids assigned), which the app reads.
+//       (deduplicated, ids assigned), which the app reads. Files are read in name order and
+//       puzzles keep their position, so ALWAYS give new batches --tag values that sort after the
+//       existing ones (e.g. n1, n2, ...): the daily schedule depends on the positions.
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { GREEN, ORANGE, PURPLE } from "../src/game/levels";
+import type { Cell } from "../src/game/types";
 import { COLOR_PAIRS, generateSlot1, generateSlot2, generateSlot3, type PoolPuzzle } from "./poolGenerators";
 
 const OUT_DIR = "scripts/pool-out";
@@ -21,8 +25,48 @@ const arg = (name: string, fallback?: string) => {
   return i >= 0 ? args[i + 1] : fallback;
 };
 
-function serialize(p: PoolPuzzle): string {
-  return p.level.cells.map((row) => row.map((c) => (c.kind === "empty" ? "." : c.kind === "dead" ? "#" : `${c.kind[0]}${c.color}`)).join(",")).join("|");
+const COLOR_PERMUTATIONS: [string, string, string][] = [
+  [ORANGE, GREEN, PURPLE],
+  [ORANGE, PURPLE, GREEN],
+  [GREEN, ORANGE, PURPLE],
+  [GREEN, PURPLE, ORANGE],
+  [PURPLE, ORANGE, GREEN],
+  [PURPLE, GREEN, ORANGE],
+];
+
+/** The board flipped/rotated every way that keeps its shape (all 8 for a square board, 4 otherwise). */
+function orientations(cells: Cell[][]): Cell[][][] {
+  const reverse = <T,>(a: T[]) => [...a].reverse();
+  const flipH = cells.map(reverse);
+  const flipV = reverse(cells);
+  const rot180 = flipV.map(reverse);
+  const all = [cells, flipH, flipV, rot180];
+  if (cells.length === cells[0].length) {
+    const transpose = cells[0].map((_, c) => cells.map((row) => row[c]));
+    all.push(transpose, transpose.map(reverse), reverse(transpose), reverse(transpose).map(reverse));
+  }
+  return all;
+}
+
+/**
+ * Key that is the same for boards that are identical up to mirroring/rotating and swapping the
+ * three goose colors, so the pool never holds two puzzles that only look different.
+ */
+function canonicalKey(p: PoolPuzzle): string {
+  let best = "";
+  for (const board of orientations(p.level.cells)) {
+    for (const colors of COLOR_PERMUTATIONS) {
+      const key = board
+        .map((row) =>
+          row
+            .map((c) => (c.kind === "empty" ? "." : c.kind === "dead" ? "#" : `${c.kind === "anchor" ? "A" : "g"}${colors.indexOf(c.color)}`))
+            .join(","),
+        )
+        .join("|");
+      if (best === "" || key < best) best = key;
+    }
+  }
+  return best;
 }
 
 if (args.includes("--merge")) {
@@ -35,7 +79,7 @@ if (args.includes("--merge")) {
     for (const p of JSON.parse(readFileSync(`${OUT_DIR}/${file}`, "utf-8")) as PoolPuzzle[]) {
       // An unproven bound this long is mostly search meandering, not a real best score — skip it.
       if (!p.proven && p.optimal > MAX_UNPROVEN_MOVES) continue;
-      const s = serialize(p);
+      const s = canonicalKey(p);
       if (seen.has(s)) continue;
       seen.add(s);
       (groups[groupKey] ??= []).push(p);

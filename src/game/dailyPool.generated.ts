@@ -1647,6 +1647,1657 @@ export const dailyPool: Record<string, Level[]> = {
           }
         ]
       ]
+    },
+    {
+      "id": "d1-3x4-031",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-032",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-033",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-034",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-035",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-036",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-037",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-038",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-039",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-040",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-041",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-042",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-043",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-044",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-045",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-046",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-047",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-048",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-049",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-050",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-051",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-052",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-053",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-054",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-055",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-056",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-057",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-058",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-059",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-3x4-060",
+      "rows": 3,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
     }
   ],
   "1-4x4": [
@@ -3794,6 +5445,866 @@ export const dailyPool: Record<string, Level[]> = {
           }
         ]
       ]
+    },
+    {
+      "id": "d1-4x4-031",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-032",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-033",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-034",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-035",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-036",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-037",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-038",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-039",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-040",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-041",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d1-4x4-042",
+      "rows": 4,
+      "cols": 4,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
     }
   ],
   "2-4x5": [
@@ -5520,6 +8031,3367 @@ export const dailyPool: Record<string, Level[]> = {
           },
           {
             "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-021",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-022",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-023",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-024",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-025",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-026",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-027",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-028",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-029",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-030",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-031",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-032",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-033",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-034",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-035",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-036",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-037",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-038",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-039",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-040",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-041",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-042",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-043",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-044",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-045",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-046",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-047",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-048",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-049",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-050",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-051",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-052",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-053",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-054",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-055",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-056",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-057",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-058",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-4x5-059",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
           }
         ]
       ]
@@ -8392,6 +14264,1287 @@ export const dailyPool: Record<string, Level[]> = {
           {
             "kind": "goose",
             "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-028",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-029",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-030",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-031",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-032",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-033",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-034",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-035",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-036",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-037",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-038",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d2-5x5-039",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
           },
           {
             "kind": "empty"
@@ -11431,6 +18584,7485 @@ export const dailyPool: Record<string, Level[]> = {
           }
         ]
       ]
+    },
+    {
+      "id": "d3-5x5-031",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-032",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-033",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-034",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-035",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-036",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-037",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-038",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-039",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-040",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-041",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-042",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-043",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-044",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-045",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-046",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-047",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-048",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-049",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-050",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-051",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-052",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-053",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-054",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-055",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-056",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-057",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-058",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-059",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-060",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-061",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-062",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-063",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-064",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-065",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-066",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-067",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-068",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-069",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-070",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-071",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-072",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-073",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-074",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-075",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-076",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-077",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-078",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-079",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-080",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-081",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-082",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-083",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-084",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-085",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-086",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-087",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-088",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-089",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-090",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-091",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-092",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-093",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-094",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-095",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-096",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-097",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-098",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "dead"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-099",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-100",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-101",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-102",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-103",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d3-5x5-104",
+      "rows": 5,
+      "cols": 5,
+      "cells": [
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#e2791e"
+          },
+          {
+            "kind": "goose",
+            "color": "#e2791e"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "anchor",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "anchor",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "empty"
+          }
+        ],
+        [
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#4E2996"
+          },
+          {
+            "kind": "empty"
+          },
+          {
+            "kind": "goose",
+            "color": "#00BF63"
+          },
+          {
+            "kind": "empty"
+          }
+        ]
+      ]
     }
   ]
 };
@@ -11556,6 +26188,126 @@ export const dailyPoolBest: Record<string, { moves: number; proven: boolean }> =
     "moves": 8,
     "proven": true
   },
+  "d1-3x4-031": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-032": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-3x4-033": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-034": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-3x4-035": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-3x4-036": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-037": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-038": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-039": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-040": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-041": {
+    "moves": 7,
+    "proven": true
+  },
+  "d1-3x4-042": {
+    "moves": 8,
+    "proven": true
+  },
+  "d1-3x4-043": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-044": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-045": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-046": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-3x4-047": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-048": {
+    "moves": 7,
+    "proven": true
+  },
+  "d1-3x4-049": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-050": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-3x4-051": {
+    "moves": 8,
+    "proven": true
+  },
+  "d1-3x4-052": {
+    "moves": 8,
+    "proven": true
+  },
+  "d1-3x4-053": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-054": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-055": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-056": {
+    "moves": 8,
+    "proven": true
+  },
+  "d1-3x4-057": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-3x4-058": {
+    "moves": 7,
+    "proven": true
+  },
+  "d1-3x4-059": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-3x4-060": {
+    "moves": 7,
+    "proven": true
+  },
   "d1-4x4-001": {
     "moves": 4,
     "proven": true
@@ -11676,6 +26428,54 @@ export const dailyPoolBest: Record<string, { moves: number; proven: boolean }> =
     "moves": 4,
     "proven": true
   },
+  "d1-4x4-031": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-4x4-032": {
+    "moves": 7,
+    "proven": true
+  },
+  "d1-4x4-033": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-4x4-034": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-4x4-035": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-4x4-036": {
+    "moves": 4,
+    "proven": true
+  },
+  "d1-4x4-037": {
+    "moves": 7,
+    "proven": true
+  },
+  "d1-4x4-038": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-4x4-039": {
+    "moves": 5,
+    "proven": true
+  },
+  "d1-4x4-040": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-4x4-041": {
+    "moves": 6,
+    "proven": true
+  },
+  "d1-4x4-042": {
+    "moves": 9,
+    "proven": true
+  },
   "d2-4x5-001": {
     "moves": 7,
     "proven": true
@@ -11754,6 +26554,162 @@ export const dailyPoolBest: Record<string, { moves: number; proven: boolean }> =
   },
   "d2-4x5-020": {
     "moves": 7,
+    "proven": true
+  },
+  "d2-4x5-021": {
+    "moves": 8,
+    "proven": true
+  },
+  "d2-4x5-022": {
+    "moves": 8,
+    "proven": true
+  },
+  "d2-4x5-023": {
+    "moves": 7,
+    "proven": true
+  },
+  "d2-4x5-024": {
+    "moves": 15,
+    "proven": true
+  },
+  "d2-4x5-025": {
+    "moves": 4,
+    "proven": true
+  },
+  "d2-4x5-026": {
+    "moves": 16,
+    "proven": true
+  },
+  "d2-4x5-027": {
+    "moves": 10,
+    "proven": true
+  },
+  "d2-4x5-028": {
+    "moves": 17,
+    "proven": true
+  },
+  "d2-4x5-029": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-4x5-030": {
+    "moves": 23,
+    "proven": true
+  },
+  "d2-4x5-031": {
+    "moves": 4,
+    "proven": true
+  },
+  "d2-4x5-032": {
+    "moves": 12,
+    "proven": true
+  },
+  "d2-4x5-033": {
+    "moves": 18,
+    "proven": true
+  },
+  "d2-4x5-034": {
+    "moves": 6,
+    "proven": true
+  },
+  "d2-4x5-035": {
+    "moves": 9,
+    "proven": true
+  },
+  "d2-4x5-036": {
+    "moves": 6,
+    "proven": true
+  },
+  "d2-4x5-037": {
+    "moves": 9,
+    "proven": true
+  },
+  "d2-4x5-038": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-4x5-039": {
+    "moves": 7,
+    "proven": true
+  },
+  "d2-4x5-040": {
+    "moves": 6,
+    "proven": true
+  },
+  "d2-4x5-041": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-4x5-042": {
+    "moves": 7,
+    "proven": true
+  },
+  "d2-4x5-043": {
+    "moves": 10,
+    "proven": true
+  },
+  "d2-4x5-044": {
+    "moves": 10,
+    "proven": true
+  },
+  "d2-4x5-045": {
+    "moves": 14,
+    "proven": true
+  },
+  "d2-4x5-046": {
+    "moves": 5,
+    "proven": true
+  },
+  "d2-4x5-047": {
+    "moves": 13,
+    "proven": true
+  },
+  "d2-4x5-048": {
+    "moves": 12,
+    "proven": true
+  },
+  "d2-4x5-049": {
+    "moves": 10,
+    "proven": true
+  },
+  "d2-4x5-050": {
+    "moves": 5,
+    "proven": true
+  },
+  "d2-4x5-051": {
+    "moves": 17,
+    "proven": true
+  },
+  "d2-4x5-052": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-4x5-053": {
+    "moves": 8,
+    "proven": true
+  },
+  "d2-4x5-054": {
+    "moves": 5,
+    "proven": true
+  },
+  "d2-4x5-055": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-4x5-056": {
+    "moves": 8,
+    "proven": true
+  },
+  "d2-4x5-057": {
+    "moves": 10,
+    "proven": true
+  },
+  "d2-4x5-058": {
+    "moves": 12,
+    "proven": true
+  },
+  "d2-4x5-059": {
+    "moves": 12,
     "proven": true
   },
   "d2-5x5-001": {
@@ -11863,6 +26819,54 @@ export const dailyPoolBest: Record<string, { moves: number; proven: boolean }> =
   "d2-5x5-027": {
     "moves": 11,
     "proven": true
+  },
+  "d2-5x5-028": {
+    "moves": 11,
+    "proven": false
+  },
+  "d2-5x5-029": {
+    "moves": 15,
+    "proven": false
+  },
+  "d2-5x5-030": {
+    "moves": 11,
+    "proven": true
+  },
+  "d2-5x5-031": {
+    "moves": 10,
+    "proven": false
+  },
+  "d2-5x5-032": {
+    "moves": 5,
+    "proven": true
+  },
+  "d2-5x5-033": {
+    "moves": 12,
+    "proven": false
+  },
+  "d2-5x5-034": {
+    "moves": 9,
+    "proven": true
+  },
+  "d2-5x5-035": {
+    "moves": 17,
+    "proven": false
+  },
+  "d2-5x5-036": {
+    "moves": 6,
+    "proven": true
+  },
+  "d2-5x5-037": {
+    "moves": 10,
+    "proven": false
+  },
+  "d2-5x5-038": {
+    "moves": 15,
+    "proven": false
+  },
+  "d2-5x5-039": {
+    "moves": 13,
+    "proven": false
   },
   "d3-5x5-001": {
     "moves": 18,
@@ -11983,5 +26987,301 @@ export const dailyPoolBest: Record<string, { moves: number; proven: boolean }> =
   "d3-5x5-030": {
     "moves": 16,
     "proven": true
+  },
+  "d3-5x5-031": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-032": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-033": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-034": {
+    "moves": 19,
+    "proven": true
+  },
+  "d3-5x5-035": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-036": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-037": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-038": {
+    "moves": 17,
+    "proven": true
+  },
+  "d3-5x5-039": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-040": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-041": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-042": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-043": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-044": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-045": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-046": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-047": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-048": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-049": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-050": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-051": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-052": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-053": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-054": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-055": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-056": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-057": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-058": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-059": {
+    "moves": 21,
+    "proven": true
+  },
+  "d3-5x5-060": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-061": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-062": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-063": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-064": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-065": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-066": {
+    "moves": 19,
+    "proven": true
+  },
+  "d3-5x5-067": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-068": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-069": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-070": {
+    "moves": 17,
+    "proven": true
+  },
+  "d3-5x5-071": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-072": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-073": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-074": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-075": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-076": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-077": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-078": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-079": {
+    "moves": 19,
+    "proven": true
+  },
+  "d3-5x5-080": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-081": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-082": {
+    "moves": 17,
+    "proven": true
+  },
+  "d3-5x5-083": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-084": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-085": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-086": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-087": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-088": {
+    "moves": 18,
+    "proven": true
+  },
+  "d3-5x5-089": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-090": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-091": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-092": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-093": {
+    "moves": 17,
+    "proven": false
+  },
+  "d3-5x5-094": {
+    "moves": 17,
+    "proven": true
+  },
+  "d3-5x5-095": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-096": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-097": {
+    "moves": 18,
+    "proven": false
+  },
+  "d3-5x5-098": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-099": {
+    "moves": 16,
+    "proven": true
+  },
+  "d3-5x5-100": {
+    "moves": 13,
+    "proven": true
+  },
+  "d3-5x5-101": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-102": {
+    "moves": 15,
+    "proven": true
+  },
+  "d3-5x5-103": {
+    "moves": 14,
+    "proven": true
+  },
+  "d3-5x5-104": {
+    "moves": 20,
+    "proven": false
   }
 };
